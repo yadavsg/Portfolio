@@ -1,0 +1,1929 @@
+<!DOCTYPE html>
+<html lang="en" class="dark scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yadav S G | Mac Support Analyst L3 & Infrastructure Analyst</title>
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            mono: ['JetBrains Mono', 'monospace'],
+          },
+          colors: {
+            brand: {
+              50: '#f0fdf4',
+              500: 'var(--color-brand-500, #0284c7)',
+              600: 'var(--color-brand-600, #0284c7)',
+              700: 'var(--color-brand-700, #0369a1)',
+              glow: 'var(--color-brand-glow, rgba(2, 132, 199, 0.35))'
+            }
+          },
+          keyframes: {
+            float: {
+              '0%, 100%': { transform: 'translateY(0)' },
+              '50%': { transform: 'translateY(-4px)' },
+            },
+            pulseGlow: {
+              '0%, 100%': { filter: 'drop-shadow(0 0 2px rgba(56,189,248,0.4))' },
+              '50%': { filter: 'drop-shadow(0 0 8px rgba(56,189,248,0.9))' },
+            }
+          },
+          animation: {
+            float: 'float 3s ease-in-out infinite',
+            'pulse-glow': 'pulseGlow 2.5s ease-in-out infinite',
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    :root {
+      --color-brand-500: #0284c7;
+      --color-brand-600: #0369a1;
+      --color-brand-700: #075985;
+      --color-brand-glow: rgba(2, 132, 199, 0.35);
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    /* Custom Glassmorphism */
+    .glass {
+      background: rgba(255, 255, 255, 0.04);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+    
+    .glass-dark {
+      background: rgba(15, 23, 42, 0.85);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .glass-card {
+      background: rgba(255, 255, 255, 0.025);
+      backdrop-filter: blur(8px);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .light .glass-card {
+      background: rgba(255, 255, 255, 0.9);
+      border: 1px solid rgba(0, 0, 0, 0.08);
+      box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.04);
+    }
+
+    .glass-card:hover {
+      transform: translateY(-4px);
+      border-color: var(--color-brand-500);
+      box-shadow: 0 12px 30px -10px var(--color-brand-glow);
+    }
+
+    /* Glow Text */
+    .text-gradient {
+      background: linear-gradient(135deg, #ffffff 0%, #38bdf8 50%, var(--color-brand-500) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    
+    .light .text-gradient {
+      background: linear-gradient(135deg, #0f172a 0%, var(--color-brand-600) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    /* Custom Scrollbar */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #090d16;
+    }
+    .light ::-webkit-scrollbar-track {
+      background: #f1f5f9;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #334155;
+      border-radius: 4px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: var(--color-brand-500);
+    }
+
+    /* Grid BG pattern */
+    .bg-grid-pattern {
+      background-size: 40px 40px;
+      background-image: 
+        linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+    }
+    .light .bg-grid-pattern {
+      background-image: 
+        linear-gradient(to right, rgba(0, 0, 0, 0.04) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(0, 0, 0, 0.04) 1px, transparent 1px);
+    }
+  </style>
+
+  <script>
+    // Global Default Vector Portrait matching Yadav Gowda's photo
+    window.defaultPhoto = "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200' width='100%' height='100%'><defs><linearGradient id='bg' x1='0%' y1='0%' x2='100%' y2='100%'><stop offset='0%' stop-color='%23cbd5e1'/><stop offset='100%' stop-color='%2394a3b8'/></linearGradient><linearGradient id='skin' x1='0%' y1='0%' x2='0%' y2='100%'><stop offset='0%' stop-color='%23c68a5c'/><stop offset='100%' stop-color='%23a86e42'/></linearGradient><linearGradient id='shirt' x1='0%' y1='0%' x2='0%' y2='100%'><stop offset='0%' stop-color='%23f3e8f4'/><stop offset='100%' stop-color='%23e2d1e4'/></linearGradient></defs><rect width='200' height='200' fill='url(%23bg)'/><path d='M 30 200 C 30 155, 60 142, 100 142 C 140 142, 170 155, 170 200 Z' fill='url(%23shirt)'/><path d='M 82 142 L 100 172 L 118 142 L 100 145 Z' fill='%23a86e42'/><path d='M 72 142 L 85 168 L 78 178 L 62 148 Z' fill='%23e2d1e4'/><path d='M 128 142 L 115 168 L 122 178 L 138 148 Z' fill='%23e2d1e4'/><path d='M 86 150 Q 100 170 114 150' fill='none' stroke='%23e2e8f0' stroke-width='2' stroke-dasharray='2,1'/><rect x='85' y='115' width='30' height='32' rx='4' fill='%23a86e42'/><path d='M 85 118 Q 100 128 115 118 L 115 125 Q 100 135 85 125 Z' fill='%238f572f' opacity='0.6'/><ellipse cx='64' cy='92' rx='7' ry='11' fill='%23b87b5c'/><ellipse cx='136' cy='92' rx='7' ry='11' fill='%23b87b5c'/><path d='M 68 80 C 68 50, 132 50, 132 80 C 132 105, 120 122, 100 124 C 80 122, 68 105, 68 80 Z' fill='url(%23skin)'/><ellipse cx='84' cy='85' rx='5.5' ry='4' fill='%23ffffff'/><ellipse cx='116' cy='85' rx='5.5' ry='4' fill='%23ffffff'/><circle cx='84' cy='85' r='3' fill='%23261810'/><circle cx='116' cy='85' r='3' fill='%23261810'/><circle cx='85' cy='84' r='1' fill='%23ffffff'/><circle cx='117' cy='84' r='1' fill='%23ffffff'/><path d='M 74 77 Q 84 72 92 77' fill='none' stroke='%231a1412' stroke-width='3.5' stroke-linecap='round'/><path d='M 126 77 Q 116 72 108 77' fill='none' stroke='%231a1412' stroke-width='3.5' stroke-linecap='round'/><path d='M 100 82 L 97 97 L 103 97 Z' fill='%239e5d35' opacity='0.5'/><path d='M 95 98 Q 100 102 105 98' fill='none' stroke='%238a4f2a' stroke-width='2' stroke-linecap='round'/><path d='M 91 108 Q 100 112 109 108' fill='none' stroke='%238f4a36' stroke-width='2.5' stroke-linecap='round'/><path d='M 88 103 Q 100 100 112 103 C 110 107, 104 108, 100 106 C 96 108, 90 107, 88 103 Z' fill='%231a1412'/><path d='M 68 88 C 68 112, 80 126, 100 126 C 120 126, 132 112, 132 88 C 132 100, 124 121, 100 123 C 76 121, 68 100, 68 88 Z' fill='%231a1412'/><path d='M 64 76 C 60 55, 75 38, 100 38 C 125 38, 140 55, 136 76 C 140 68, 138 50, 126 42 C 115 36, 85 36, 74 42 C 62 50, 60 68, 64 76 Z' fill='%231a1412'/><circle cx='80' cy='44' r='8' fill='%231a1412'/><circle cx='92' cy='40' r='9' fill='%231a1412'/><circle cx='108' cy='40' r='9' fill='%231a1412'/><circle cx='120' cy='44' r='8' fill='%231a1412'/></svg>";
+
+    window.handleImgError = function(img) {
+      if (img.dataset.fallbackTried) return;
+      img.dataset.fallbackTried = "true";
+      img.src = window.defaultPhoto;
+    };
+  </script>
+</head>
+
+<body class="bg-slate-950 text-slate-100 antialiased selection:bg-sky-500 selection:text-white transition-colors duration-300 relative overflow-x-hidden">
+
+  <canvas id="particleCanvas" class="fixed inset-0 pointer-events-none z-0 opacity-40"></canvas>
+
+  <div class="fixed top-1/4 left-1/4 w-96 h-96 bg-purple-600/20 rounded-full blur-3xl pointer-events-none -z-10 animate-pulse"></div>
+  <div class="fixed bottom-1/4 right-1/4 w-96 h-96 bg-emerald-600/15 rounded-full blur-3xl pointer-events-none -z-10"></div>
+
+  <header class="fixed top-0 left-0 w-full z-40 transition-all duration-300 py-4" id="mainHeader">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="glass-dark rounded-2xl px-5 py-3 flex items-center justify-between shadow-2xl border border-slate-800/80">
+        
+        <a href="#hero" class="flex items-center space-x-3 group">
+          <div class="relative w-10 h-10 rounded-xl overflow-hidden border border-sky-500/40 shadow-md group-hover:scale-105 transition-transform flex-shrink-0 bg-slate-800">
+            <img src="Image.jpg" alt="Yadav S G" class="profile-photo-img w-full h-full object-cover object-top" onerror="handleImgError(this)" />
+          </div>
+          <div>
+            <span class="font-bold text-base sm:text-lg tracking-tight text-slate-100 group-hover:text-sky-400 transition-colors block leading-none" id="navBrandName">Yadav S G</span>
+            <span class="text-[10px] font-mono text-slate-400 flex items-center mt-1.5"><img src="dxc.jpg" alt="DXC" class="h-3 w-3 rounded-full bg-white p-0.5 mr-1.5 object-contain group-hover:animate-pulse-glow transition-all duration-300" /> DXC Technology • Bengaluru</span>
+          </div>
+        </a>
+
+        <nav class="hidden xl:flex items-center space-x-1 text-xs font-medium text-slate-300">
+          <a href="#about" class="px-3 py-2 rounded-xl hover:text-white hover:bg-slate-800/80 transition-all">About</a>
+          <a href="#experience" class="px-3 py-2 rounded-xl hover:text-white hover:bg-slate-800/80 transition-all">Timeline</a>
+          <a href="#metrics" class="px-3 py-2 rounded-xl hover:text-white hover:bg-slate-800/80 transition-all">Workday Metrics</a>
+          <a href="#roadmap" class="px-3 py-2 rounded-xl hover:text-white hover:bg-slate-800/80 transition-all">FY27 Roadmap</a>
+          <a href="#skills" class="px-3 py-2 rounded-xl hover:text-white hover:bg-slate-800/80 transition-all">Skills & Tools</a>
+          <a href="#projects" class="px-3 py-2 rounded-xl hover:text-white hover:bg-slate-800/80 transition-all">Projects</a>
+          <a href="#recognitions" class="px-3 py-2 rounded-xl hover:text-white hover:bg-slate-800/80 transition-all">Recognitions</a>
+          <a href="#contact" class="px-3 py-2 rounded-xl hover:text-white hover:bg-slate-800/80 transition-all">Contact</a>
+        </nav>
+
+        <!-- Top Menu Bar Contact Info (Visible on large screens) -->
+        <div class="hidden 2xl:flex items-center space-x-4 mx-2 border-l border-r border-slate-700/50 px-4 text-xs font-mono text-slate-400">
+          <a href="mailto:yadavsgmca2023@gmail.com" class="hover:text-sky-400 transition-colors flex items-center"><i class="fa-solid fa-envelope mr-1.5"></i>yadavsgmca2023@gmail.com</a>
+          <a href="tel:+917349703556" class="hover:text-amber-400 transition-colors flex items-center"><i class="fa-solid fa-phone mr-1.5"></i>+91-7349703556</a>
+        </div>
+
+        <div class="flex items-center space-x-2 sm:space-x-3">
+          <button id="themeToggle" class="p-2.5 rounded-xl bg-slate-800/80 hover:bg-slate-700/80 text-slate-300 hover:text-white transition-all border border-slate-700/50" title="Toggle Dark/Light Mode">
+            <i class="fa-solid fa-moon text-sm" id="themeIcon"></i>
+          </button>
+
+          <button id="openCustomizerBtn" class="p-2.5 rounded-xl bg-sky-500/10 hover:bg-sky-500/20 text-sky-400 border border-sky-500/30 transition-all flex items-center space-x-2 text-xs font-medium" title="Customize Profile Settings">
+            <i class="fa-solid fa-sliders text-sm"></i>
+            <span class="hidden sm:inline">Customize</span>
+          </button>
+
+          <div id="cloudStatusBadge" class="hidden sm:flex items-center space-x-1.5 px-3 py-1.5 rounded-xl bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-xs font-mono">
+            <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+            <span id="cloudStatusText">Synced</span>
+          </div>
+
+          <a href="#contact" class="hidden sm:inline-flex items-center space-x-2 px-4 py-2 rounded-xl bg-sky-600 hover:bg-sky-500 text-white font-semibold text-xs transition-all shadow-md shadow-sky-600/20">
+            <i class="fa-solid fa-paper-plane text-xs"></i>
+            <span>Get in Touch</span>
+          </a>
+
+          <button id="mobileMenuBtn" class="xl:hidden p-2.5 rounded-xl bg-slate-800/80 text-slate-300 hover:text-white border border-slate-700/50">
+            <i class="fa-solid fa-bars text-base" id="mobileMenuIcon"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div id="mobileMenu" class="hidden xl:hidden max-w-7xl mx-auto px-4 mt-2">
+      <div class="glass-dark rounded-2xl p-4 flex flex-col space-y-2 border border-slate-800 shadow-2xl">
+        <a href="#about" class="px-4 py-2.5 rounded-xl text-slate-300 hover:bg-slate-800 hover:text-white transition-all flex items-center space-x-3 text-sm">
+          <i class="fa-solid fa-user text-sky-400 w-5"></i>
+          <span>About Executive Summary</span>
+        </a>
+        <a href="#experience" class="px-4 py-2.5 rounded-xl text-slate-300 hover:bg-slate-800 hover:text-white transition-all flex items-center space-x-3 text-sm">
+          <i class="fa-solid fa-timeline text-sky-400 w-5"></i>
+          <span>Promotion Timeline</span>
+        </a>
+        <a href="#metrics" class="px-4 py-2.5 rounded-xl text-slate-300 hover:bg-slate-800 hover:text-white transition-all flex items-center space-x-3 text-sm">
+          <i class="fa-solid fa-chart-line text-sky-400 w-5"></i>
+          <span>Workday Performance Metrics</span>
+        </a>
+        <a href="#roadmap" class="px-4 py-2.5 rounded-xl text-slate-300 hover:bg-slate-800 hover:text-white transition-all flex items-center space-x-3 text-sm">
+          <i class="fa-solid fa-bullseye text-sky-400 w-5"></i>
+          <span>FY27 Focus Roadmap</span>
+        </a>
+        <a href="#skills" class="px-4 py-2.5 rounded-xl text-slate-300 hover:bg-slate-800 hover:text-white transition-all flex items-center space-x-3 text-sm">
+          <i class="fa-solid fa-laptop-code text-sky-400 w-5"></i>
+          <span>Skills & Enterprise Tools</span>
+        </a>
+        <a href="#projects" class="px-4 py-2.5 rounded-xl text-slate-300 hover:bg-slate-800 hover:text-white transition-all flex items-center space-x-3 text-sm">
+          <i class="fa-solid fa-briefcase text-sky-400 w-5"></i>
+          <span>Projects & Accounts</span>
+        </a>
+        <a href="#recognitions" class="px-4 py-2.5 rounded-xl text-slate-300 hover:bg-slate-800 hover:text-white transition-all flex items-center space-x-3 text-sm">
+          <i class="fa-solid fa-trophy text-sky-400 w-5"></i>
+          <span>Workday Recognitions Stream</span>
+        </a>
+        <a href="#contact" class="px-4 py-2.5 rounded-xl text-slate-300 hover:bg-slate-800 hover:text-white transition-all flex items-center space-x-3 text-sm">
+          <i class="fa-solid fa-envelope text-sky-400 w-5"></i>
+          <span>Contact Yadav S G</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="relative z-10 pt-24">
+    
+    <!-- 1. Info about me (Hero + About) -->
+    <section id="hero" class="min-h-[90vh] flex items-center justify-center py-12 relative bg-grid-pattern">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          
+          <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+            <div class="inline-flex items-center space-x-2 px-3.5 py-1.5 rounded-full bg-sky-500/10 border border-sky-500/20 text-sky-400 text-xs sm:text-sm font-medium">
+              <span class="w-2 h-2 rounded-full bg-sky-400 animate-ping"></span>
+              <span class="w-2 h-2 rounded-full bg-sky-400 -ml-4"></span>
+              <span id="heroCompanyTag" class="flex items-center"><img src="dxc.jpg" alt="DXC" class="h-3.5 w-3.5 rounded-full bg-white p-0.5 mr-1.5 object-contain animate-float" />DXC Technology • Bengaluru • Endpoint Infrastructure</span>
+            </div>
+
+            <h1 class="text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight leading-tight">
+              Hi, I'm <span class="text-gradient" id="heroName">Yadav S G</span> 👋
+            </h1>
+
+            <div class="text-xl sm:text-2xl font-mono text-slate-300 flex items-center justify-center lg:justify-start space-x-2">
+              <span class="text-sky-400">&gt;</span>
+              <span id="typingText" class="border-r-2 border-sky-400 pr-1 animate-pulse">Infrastructure Analyst</span>
+            </div>
+
+            <p class="text-slate-400 text-base sm:text-lg max-w-2xl leading-relaxed mx-auto lg:mx-0" id="heroBio">
+              Infrastructure Analyst with 2+ years of enterprise IT experience specializing in endpoint management, modern workplace technologies, and macOS/Windows engineering. Rated <strong class="text-emerald-400">Valued Impact</strong> and ranked <strong class="text-amber-400">#3 Stack Ranking in FY26</strong> with 10x Workday recognitions.
+            </p>
+
+            <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-2 max-w-xl mx-auto lg:mx-0">
+              <div class="glass p-3.5 rounded-2xl border border-slate-800 text-center">
+                <span class="text-lg sm:text-xl font-bold font-mono text-emerald-400 block" id="badgeRating">Valued Impact</span>
+                <span class="block text-[10px] font-mono uppercase text-slate-400 mt-1">DXC Rating FY26</span>
+              </div>
+              <div class="glass p-3.5 rounded-2xl border border-slate-800 text-center">
+                <span class="text-lg sm:text-2xl font-bold font-mono text-amber-400 block" id="badgeStackRank">#3</span>
+                <span class="block text-[10px] font-mono uppercase text-slate-400 mt-1">Stack Rank FY26</span>
+              </div>
+              <div class="glass p-3.5 rounded-2xl border border-slate-800 text-center">
+                <span class="text-lg sm:text-2xl font-bold font-mono text-sky-400 block" id="badgeGoalCard">100%</span>
+                <span class="block text-[10px] font-mono uppercase text-slate-400 mt-1">Goal Card Met</span>
+              </div>
+              <div class="glass p-3.5 rounded-2xl border border-slate-800 text-center">
+                <span class="text-lg sm:text-2xl font-bold font-mono text-purple-400 block" id="badgeComplaints">0</span>
+                <span class="block text-[10px] font-mono uppercase text-slate-400 mt-1">Complaints</span>
+              </div>
+            </div>
+
+            <div class="pt-4 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
+              <a href="#projects" class="w-full sm:w-auto px-8 py-3.5 rounded-xl bg-sky-600 hover:bg-sky-500 text-white font-semibold text-sm transition-all shadow-lg shadow-sky-600/25 flex items-center justify-center space-x-2 group">
+                <i class="fa-solid fa-briefcase text-xs"></i>
+                <span>Explore Projects & Accounts</span>
+                <i class="fa-solid fa-arrow-right text-xs group-hover:translate-x-1 transition-transform"></i>
+              </a>
+
+              <a href="#contact" class="w-full sm:w-auto px-7 py-3.5 rounded-xl glass hover:bg-slate-800 text-slate-200 font-semibold text-sm transition-all border border-slate-700/60 flex items-center justify-center space-x-2">
+                <i class="fa-regular fa-paper-plane text-sky-400"></i>
+                <span>Contact Me</span>
+              </a>
+
+              <button id="downloadCvBtn" class="w-full sm:w-auto px-5 py-3.5 rounded-xl glass hover:bg-slate-800 text-slate-300 hover:text-white transition-all border border-slate-700/60 flex items-center justify-center space-x-2" title="Download Executive Profile PDF">
+                <i class="fa-solid fa-file-pdf text-red-400"></i>
+                <span class="text-xs font-semibold">Resume / Deck</span>
+              </button>
+            </div>
+
+            <!-- Social Media Action Icons -->
+            <div class="pt-6 flex items-center justify-center lg:justify-start space-x-4">
+              <a href="https://www.linkedin.com/in/yadav-s-g-469b08390/" target="_blank" class="w-11 h-11 rounded-full glass flex items-center justify-center text-slate-400 hover:text-blue-400 hover:bg-blue-500/10 transition-all border border-slate-700/60 shadow-lg" title="LinkedIn Profile">
+                <i class="fa-brands fa-linkedin-in text-lg"></i>
+              </a>
+              <a href="https://github.com/yadavsg" target="_blank" class="w-11 h-11 rounded-full glass flex items-center justify-center text-slate-400 hover:text-slate-100 hover:bg-slate-800 transition-all border border-slate-700/60 shadow-lg" title="GitHub Profile">
+                <i class="fa-brands fa-github text-lg"></i>
+              </a>
+              <a href="https://instagram.com/yadav__gowda" target="_blank" class="w-11 h-11 rounded-full glass flex items-center justify-center text-slate-400 hover:text-pink-400 hover:bg-pink-500/10 transition-all border border-slate-700/60 shadow-lg" title="Instagram Profile">
+                <i class="fa-brands fa-instagram text-lg"></i>
+              </a>
+              <a href="#" target="_blank" class="w-11 h-11 rounded-full glass flex items-center justify-center text-slate-400 hover:text-sky-400 hover:bg-sky-500/10 transition-all border border-slate-700/60 shadow-lg" title="Twitter / X">
+                <i class="fa-brands fa-x-twitter text-lg"></i>
+              </a>
+              <a href="tel:+917349703556" class="w-11 h-11 rounded-full glass flex items-center justify-center text-slate-400 hover:text-amber-400 hover:bg-amber-500/10 transition-all border border-slate-700/60 shadow-lg" title="Call Me">
+                <i class="fa-solid fa-phone text-lg"></i>
+              </a>
+            </div>
+
+            <div class="pt-6 flex flex-wrap items-center justify-center lg:justify-start gap-2 text-slate-400">
+              <span class="text-xs uppercase tracking-wider font-mono text-slate-500 mr-2">Core Domain:</span>
+              <span class="px-2.5 py-1 rounded-lg glass text-xs font-mono text-sky-300 border border-sky-500/20"><i class="fa-brands fa-apple mr-1"></i> Jamf Pro & ABM</span>
+              <span class="px-2.5 py-1 rounded-lg glass text-xs font-mono text-blue-300 border border-blue-500/20"><i class="fa-brands fa-windows mr-1"></i> Intune & Entra ID</span>
+              <span class="px-2.5 py-1 rounded-lg glass text-xs font-mono text-emerald-300 border border-emerald-500/20"><i class="fa-solid fa-shield-halved mr-1"></i> Zscaler & VPN</span>
+              <span class="px-2.5 py-1 rounded-lg glass text-xs font-mono text-purple-300 border border-purple-500/20"><i class="fa-solid fa-headset mr-1"></i> ServiceNow & Nexthink</span>
+            </div>
+          </div>
+
+          <div class="lg:col-span-5 flex flex-col items-center justify-center space-y-6">
+            <div class="relative w-full max-w-md">
+              <div class="absolute -inset-4 bg-gradient-to-r from-sky-500 via-blue-600 to-indigo-600 rounded-3xl blur-2xl opacity-30 animate-pulse"></div>
+              
+              <div class="relative w-full rounded-3xl glass-dark border border-slate-700/80 shadow-2xl overflow-hidden">
+                <!-- DXC Background Layer -->
+                <div class="absolute inset-0 z-0 pointer-events-none opacity-20">
+                  <img src="dxc.jpg" alt="DXC Background" class="w-full h-full object-cover" />
+                </div>
+                
+                <!-- Content Wrapper (positioned above the background) -->
+                <div class="relative z-10 p-6 space-y-5">
+                  <div class="flex items-center space-x-5">
+                    <div class="relative w-24 h-24 sm:w-28 sm:h-28 rounded-2xl overflow-hidden border-2 border-sky-400/80 shadow-2xl flex-shrink-0 bg-slate-900 group">
+                      <img src="Image.jpg" alt="Yadav S G Profile Photo" class="profile-photo-img w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500" onerror="handleImgError(this)" />
+                      <div class="absolute bottom-1 right-1 w-4 h-4 bg-emerald-400 border-2 border-slate-950 rounded-full" title="Active Mac Support Analyst L3"></div>
+                    </div>
+
+                    <div class="space-y-1.5">
+                <div class="p-3.5 rounded-2xl bg-slate-900/90 border border-slate-800 space-y-2 text-xs">
+                  <div class="flex items-center justify-between text-[11px] font-mono text-slate-400">
+                    <span>PROMOTION PROGRESSION</span>
+                    <span class="text-amber-400 font-bold">2+ YEARS DXC</span>
+                  </div>
+                  <div class="grid grid-cols-3 gap-1.5 text-center font-mono text-[10px]">
+                    <div class="p-2 rounded-xl bg-slate-800/80 text-slate-300">L1 Support (18m)</div>
+                    <div class="p-2 rounded-xl bg-slate-800/80 text-amber-300">L1.5 Advanced (6m)</div>
+                    <div class="p-2 rounded-xl bg-sky-500/20 text-sky-300 font-bold border border-sky-500/30">Mac Support Analyst L3</div>
+                  </div>
+                </div>
+
+                <div class="p-3.5 rounded-2xl bg-slate-900/90 border border-slate-800 space-y-1 text-xs">
+                  <div class="flex justify-between items-center text-[11px] font-mono">
+                    <span class="text-slate-400">DXC WORKDAY RATING:</span>
+                    <span class="text-emerald-400 font-bold"><i class="fa-solid fa-star text-xs mr-1"></i> VALUED IMPACT</span>
+                  </div>
+                  <div class="flex justify-between items-center text-[11px] font-mono pt-1 border-t border-slate-800/80">
+                    <span class="text-slate-400">FY26 STACK RANKING:</span>
+                    <span class="text-amber-400 font-bold">RANK #3</span>
+                  </div>
+                </div>
+
+                <div class="pt-2 border-t border-slate-800/80 space-y-2 text-xs">
+                  <div class="flex items-center justify-between">
+                    <div class="flex items-center space-x-1.5 text-slate-400">
+                      <img src="dxc.jpg" alt="DXC" class="h-4 w-4 rounded-full bg-white p-0.5 object-contain animate-float" />
+                      <span>DXC Honor:</span>
+                    </div>
+                    <div class="flex items-center space-x-1 text-amber-400 font-mono">
+                      <i class="fa-solid fa-award"></i>
+                      <span>Pillar of Performance</span>
+                    </div>
+                  </div>
+                  <div class="flex items-center justify-between">
+                    <div class="flex items-center space-x-1.5 text-slate-400">
+                      <i class="fa-solid fa-graduation-cap text-sky-400"></i>
+                      <span>Education:</span>
+                    </div>
+                    <div class="flex items-center space-x-1 text-slate-300 font-mono">
+                      <span>MCA (2023)</span>
+                    </div>
+                  </div>
+                </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="py-20 relative">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-3xl mx-auto mb-16">
+          <h2 class="text-xs font-mono font-bold tracking-widest text-sky-400 uppercase mb-2">// Executive Summary</h2>
+          <p class="text-3xl sm:text-4xl font-extrabold text-slate-100">Enterprise IT & macOS Endpoint Leadership</p>
+          <div class="w-12 h-1 bg-sky-500 mx-auto rounded-full mt-4"></div>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+          <div class="lg:col-span-7 glass-card p-8 rounded-3xl space-y-5 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center space-x-4 mb-4">
+                <div class="w-14 h-14 rounded-2xl overflow-hidden border border-sky-500/40 shadow-lg flex-shrink-0 bg-slate-800">
+                  <img src="Image.jpg" alt="Yadav S G Profile" class="profile-photo-img w-full h-full object-cover object-top" onerror="handleImgError(this)" />
+                </div>
+                <div>
+                  <h3 class="text-2xl font-bold text-slate-100">DXC Technology Infrastructure Analyst</h3>
+                  <p class="text-xs font-mono text-sky-400 flex items-center mt-1.5"><img src="Philips.jpg" alt="Philips" class="h-4 w-4 rounded-full bg-white p-0.5 mr-1.5 object-contain animate-float" /> Mac Support Analyst L3 • Royal Philips Client Account • Bengaluru</p>
+                </div>
+              </div>
+              <p class="text-slate-300 leading-relaxed text-sm sm:text-base" id="aboutTextMain">
+                I am an Infrastructure Analyst with over 2 years of experience in enterprise IT support, specializing in endpoint management, modern workplace technologies, and technical troubleshooting. Started my journey with DXC Technology in June 2024 on the Georg Fischer account as an L1 Support Engineer for 18 months, promoted to L1.5 for 6 months based on performance, and directly promoted to <strong class="text-slate-100">Mac Support Analyst L3</strong> for the Royal Philips account in July 2026.
+              </p>
+              <p class="text-slate-400 leading-relaxed text-sm mt-3" id="aboutTextSub">
+                Evaluated with an official DXC rating of <strong class="text-emerald-400">Valued Impact</strong> and ranked <strong class="text-amber-400">#3 Stack Ranking in FY26</strong>. Actively monitored ticket volume, case aging, and reassignment trends while guiding L1 agents to reduce unnecessary escalations and managing PlatformX Integration redirection to ILC.
+              </p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4 border-t border-slate-800/80">
+              <div class="flex items-start space-x-3">
+                <div class="p-2.5 rounded-xl bg-sky-500/10 text-sky-400 border border-sky-500/20 mt-1">
+                  <i class="fa-brands fa-apple text-lg"></i>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-slate-200 text-sm">Apple Fleet & MDM Architecture</h4>
+                  <p class="text-xs text-slate-400">Jamf Pro smart groups, patch policies & zero-touch ADE</p>
+                </div>
+              </div>
+
+              <div class="flex items-start space-x-3">
+                <div class="p-2.5 rounded-xl bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 mt-1">
+                  <i class="fa-solid fa-shield-halved text-lg"></i>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-slate-200 text-sm">Zero Trust & Cloud Identity</h4>
+                  <p class="text-xs text-slate-400">Entra ID Conditional Access & FileVault Intune key escrow</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="lg:col-span-5 grid grid-cols-2 gap-4">
+            <div class="glass-card p-6 rounded-3xl text-center flex flex-col justify-center items-center">
+              <div class="p-3 rounded-2xl bg-emerald-500/10 text-emerald-400 mb-2">
+                <i class="fa-solid fa-star text-2xl"></i>
+              </div>
+              <span class="text-2xl sm:text-3xl font-extrabold text-emerald-400 font-mono">Valued Impact</span>
+              <span class="text-xs font-medium text-slate-400 mt-2 uppercase tracking-wider">DXC Workday Category</span>
+              <span class="text-[10px] text-slate-500 mt-1">Exceeds Performance Expectations</span>
+            </div>
+
+            <div class="glass-card p-6 rounded-3xl text-center flex flex-col justify-center items-center">
+              <div class="p-3 rounded-2xl bg-amber-500/10 text-amber-400 mb-2">
+                <i class="fa-solid fa-ranking-star text-2xl"></i>
+              </div>
+              <span class="text-3xl sm:text-4xl font-extrabold text-amber-400 font-mono" id="statStackRank">#3</span>
+              <span class="text-xs font-medium text-slate-400 mt-2 uppercase tracking-wider">FY26 Stack Rank</span>
+              <span class="text-[10px] text-slate-500 mt-1">Top Tier Performer</span>
+            </div>
+
+            <div class="glass-card p-6 rounded-3xl text-center flex flex-col justify-center items-center">
+              <div class="p-3 rounded-2xl bg-sky-500/10 text-sky-400 mb-2">
+                <i class="fa-solid fa-award text-2xl"></i>
+              </div>
+              <span class="text-3xl sm:text-4xl font-extrabold text-sky-400 font-mono">10x</span>
+              <span class="text-xs font-medium text-slate-400 mt-2 uppercase tracking-wider">Workday Recognitions</span>
+              <span class="text-[10px] text-slate-500 mt-1">Milestones by Gautham Raj Shetty</span>
+            </div>
+
+            <div class="glass-card p-6 rounded-3xl text-center flex flex-col justify-center items-center">
+              <div class="p-3 rounded-2xl bg-purple-500/10 text-purple-400 mb-2">
+                <i class="fa-solid fa-shield-check text-2xl"></i>
+              </div>
+              <span class="text-3xl sm:text-4xl font-extrabold text-purple-400 font-mono" id="statComplaints">0</span>
+              <span class="text-xs font-medium text-slate-400 mt-2 uppercase tracking-wider">Client Complaints</span>
+              <span class="text-[10px] text-slate-500 mt-1">100% Quality Assurance</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 2. Roles (DXC Promotion Path) -->
+    <section id="experience" class="py-20 relative bg-slate-900/40">
+      <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-3xl mx-auto mb-16">
+          <h2 class="text-xs font-mono font-bold tracking-widest text-sky-400 uppercase mb-2">// DXC Promotion Path</h2>
+          <p class="text-3xl sm:text-4xl font-extrabold text-slate-100">Career Progression & Promotion History</p>
+          <div class="w-12 h-1 bg-sky-500 mx-auto rounded-full mt-4"></div>
+        </div>
+
+        <div class="relative border-l-2 border-slate-800 ml-4 md:ml-32 space-y-12">
+          
+          <div class="relative pl-8 group">
+            <div class="absolute -left-[17px] top-1 w-8 h-8 rounded-full bg-sky-600 border-4 border-slate-950 flex items-center justify-center text-white text-xs group-hover:scale-125 transition-transform shadow-lg shadow-sky-500/50">
+              <i class="fa-solid fa-award"></i>
+            </div>
+            <div class="md:absolute md:-left-36 md:top-1 text-xs font-mono font-bold text-sky-400 mb-2 md:mb-0 md:w-28 md:text-right">
+              JUL 2026 - PRESENT
+            </div>
+            <div class="glass-card p-6 sm:p-8 rounded-3xl space-y-4 border-l-4 border-l-sky-500">
+              <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+                <div>
+                  <h3 class="text-xl font-bold text-slate-100">Promoted to Mac Support Analyst L3</h3>
+                  <p class="text-xs font-mono text-sky-400 flex items-center mt-1.5"><img src="Philips.jpg" alt="Philips" class="h-4 w-4 rounded-full bg-white p-0.5 mr-1.5 object-contain group-hover:scale-125 transition-transform duration-300" /> Royal Philips Client Account <span class="mx-1.5 text-slate-600">•</span> <img src="dxc.jpg" alt="DXC" class="h-4 w-4 rounded-full bg-white p-0.5 mr-1.5 object-contain group-hover:scale-125 transition-transform duration-300 delay-75" /> DXC Technology</p>
+                </div>
+                <span class="w-fit px-3 py-1 rounded-full bg-sky-500/10 text-sky-400 border border-sky-500/20 text-xs font-mono font-bold">L3 ANALYST</span>
+              </div>
+              <p class="text-slate-300 text-sm leading-relaxed">
+                Directly promoted to Mac Support Analyst L3 for the Royal Philips account in July 2026. Architecting global macOS fleet configurations using Jamf Pro, Microsoft Intune, Microsoft Entra ID, and ServiceNow. Resolving tier-3 escalations, macOS patch policies, SSO, MFA, VPN, Zscaler, MDM enrollment, and Zero-Trust access rules.
+              </p>
+              <div class="flex flex-wrap gap-2 pt-1">
+                <span class="px-2.5 py-1 rounded-lg bg-slate-800/80 text-slate-300 text-xs font-mono border border-slate-700/50"><i class="fa-brands fa-apple text-sky-400 mr-1"></i> Jamf Pro</span>
+                <span class="px-2.5 py-1 rounded-lg bg-slate-800/80 text-slate-300 text-xs font-mono border border-slate-700/50"><i class="fa-solid fa-gear text-sky-400 mr-1"></i> ABM</span>
+                <span class="px-2.5 py-1 rounded-lg bg-slate-800/80 text-slate-300 text-xs font-mono border border-slate-700/50"><i class="fa-brands fa-windows text-blue-400 mr-1"></i> Intune</span>
+                <span class="px-2.5 py-1 rounded-lg bg-slate-800/80 text-slate-300 text-xs font-mono border border-slate-700/50"><i class="fa-solid fa-user-shield text-emerald-400 mr-1"></i> Entra ID</span>
+                <span class="px-2.5 py-1 rounded-lg bg-slate-800/80 text-slate-300 text-xs font-mono border border-slate-700/50"><i class="fa-solid fa-lock text-purple-400 mr-1"></i> Zero-Trust</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="relative pl-8 group">
+            <div class="absolute -left-[17px] top-1 w-8 h-8 rounded-full bg-amber-500 border-4 border-slate-950 flex items-center justify-center text-white text-xs group-hover:scale-125 transition-transform shadow-lg shadow-amber-500/30">
+              <i class="fa-solid fa-wrench"></i>
+            </div>
+            <div class="md:absolute md:-left-36 md:top-1 text-xs font-mono font-bold text-amber-400 mb-2 md:mb-0 md:w-28 md:text-right">
+              DEC 2025 - JUN 2026<br><span class="text-[10px] text-slate-400 font-normal">(6 Months)</span>
+            </div>
+            <div class="glass-card p-6 sm:p-8 rounded-3xl space-y-4 border-l-4 border-l-amber-500">
+              <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+                <div>
+                  <h3 class="text-xl font-bold text-slate-100">Promoted to L1.5 Support Engineer</h3>
+                  <p class="text-xs font-mono text-amber-400 flex items-center mt-1.5"><img src="GF.jpg" alt="GF" class="h-4 w-4 rounded-full bg-white p-0.5 mr-1.5 object-contain group-hover:scale-125 transition-transform duration-300" /> Georg Fischer Account • Stack Rank #3</p>
+                </div>
+                <span class="w-fit px-3 py-1 rounded-full bg-amber-500/10 text-amber-400 border border-amber-500/20 text-xs font-mono font-bold">L1.5 ADVANCED</span>
+              </div>
+              <p class="text-slate-300 text-sm leading-relaxed">
+                After 18 months of exceptional L1 performance, promoted to L1.5 for 6 months. Actively monitored ticket volume, case aging, and reassignment trends to guarantee SLA compliance. Provided advanced technical guidance to L1 agents to elevate ticket resolution quality, and ensured proper PlatformX Integration redirection to ILC.
+              </p>
+              <div class="grid grid-cols-2 sm:grid-cols-4 gap-2 pt-1 text-center text-xs font-mono">
+                <div class="p-2.5 rounded-xl bg-slate-900/80 border border-slate-800 text-emerald-300"><i class="fa-solid fa-star text-xs mr-1"></i> Valued Impact</div>
+                <div class="p-2.5 rounded-xl bg-slate-900/80 border border-slate-800 text-amber-300"><i class="fa-solid fa-trophy text-xs mr-1"></i> #3 Stack Rank</div>
+                <div class="p-2.5 rounded-xl bg-slate-900/80 border border-slate-800 text-sky-300"><i class="fa-solid fa-face-smile text-xs mr-1"></i> Highest CSAT</div>
+                <div class="p-2.5 rounded-xl bg-slate-900/80 border border-slate-800 text-purple-300"><i class="fa-solid fa-check-double text-xs mr-1"></i> Highest FCR</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="relative pl-8 group">
+            <div class="absolute -left-[17px] top-1 w-8 h-8 rounded-full bg-emerald-600 border-4 border-slate-950 flex items-center justify-center text-white text-xs group-hover:scale-125 transition-transform">
+              <i class="fa-solid fa-right-to-bracket"></i>
+            </div>
+            <div class="md:absolute md:-left-36 md:top-1 text-xs font-mono font-bold text-emerald-400 mb-2 md:mb-0 md:w-28 md:text-right">
+              JUN 2024 - NOV 2025<br><span class="text-[10px] text-slate-400 font-normal">(18 Months)</span>
+            </div>
+            <div class="glass-card p-6 sm:p-8 rounded-3xl space-y-4 border-l-4 border-l-emerald-500">
+              <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+                <div>
+                  <h3 class="text-xl font-bold text-slate-100">Joined DXC Technology as L1 Support Engineer</h3>
+                  <p class="text-xs font-mono text-emerald-400 flex items-center mt-1.5"><img src="GF.jpg" alt="GF" class="h-4 w-4 rounded-full bg-white p-0.5 mr-1.5 object-contain group-hover:scale-125 transition-transform duration-300" /> Georg Fischer Client Account • Full-Time Onsite</p>
+                </div>
+                <span class="w-fit px-3 py-1 rounded-full bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 text-xs font-mono font-bold">L1 SUPPORT</span>
+              </div>
+              <p class="text-slate-300 text-sm leading-relaxed">
+                Worked as an L1 Support Engineer for 18 months supporting the Georg Fischer global IT environment. Handled enterprise incident tickets across Windows, M365, Zscaler proxies, corporate VPNs, BIOS updates, and ServiceNow ITSM ticket lifecycles.
+              </p>
+              <div class="flex flex-wrap gap-2 pt-1">
+                <span class="px-2.5 py-1 rounded-lg bg-slate-800/80 text-slate-300 text-xs font-mono border border-slate-700/50"><i class="fa-solid fa-headset text-purple-400 mr-1"></i> ServiceNow ITSM</span>
+                <span class="px-2.5 py-1 rounded-lg bg-slate-800/80 text-slate-300 text-xs font-mono border border-slate-700/50"><i class="fa-brands fa-windows text-blue-400 mr-1"></i> M365 Admin</span>
+                <span class="px-2.5 py-1 rounded-lg bg-slate-800/80 text-slate-300 text-xs font-mono border border-slate-700/50"><i class="fa-solid fa-globe text-emerald-400 mr-1"></i> Zscaler Proxy</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 3. Ratings (Performance Benchmarks) -->
+    <section id="metrics" class="py-16 relative bg-slate-900/40">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-3xl mx-auto mb-12">
+          <h2 class="text-xs font-mono font-bold tracking-widest text-sky-400 uppercase mb-2">// Workday Performance Benchmarks</h2>
+          <p class="text-3xl font-extrabold text-slate-100">FY26 Operational Excellence & Audit Compliance</p>
+          <p class="text-slate-400 text-sm mt-2">Sustained track record of high operational efficiency, meeting 100% of goal card parameters and exceeding global client SLA benchmarks.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+          <div class="glass-card p-6 rounded-3xl space-y-3">
+            <div class="flex justify-between items-center text-sm font-semibold">
+              <span class="text-slate-200 flex items-center"><i class="fa-solid fa-bullseye text-amber-400 mr-2"></i> Goal Card Parameters</span>
+              <span class="font-mono text-amber-400 font-bold text-lg">100%</span>
+            </div>
+            <div class="w-full bg-slate-800 h-3 rounded-full overflow-hidden">
+              <div class="bg-gradient-to-r from-amber-500 to-yellow-400 h-full rounded-full" style="width: 100%"></div>
+            </div>
+            <p class="text-xs text-slate-400">Consistently achieved 100% of goal card parameters, meeting all performance and delivery expectations.</p>
+          </div>
+
+          <div class="glass-card p-6 rounded-3xl space-y-3">
+            <div class="flex justify-between items-center text-sm font-semibold">
+              <span class="text-slate-200 flex items-center"><i class="fa-solid fa-list-check text-emerald-400 mr-2"></i> Process Test Compliance</span>
+              <span class="font-mono text-emerald-400 font-bold text-lg">100%</span>
+            </div>
+            <div class="w-full bg-slate-800 h-3 rounded-full overflow-hidden">
+              <div class="bg-gradient-to-r from-emerald-500 to-teal-400 h-full rounded-full" style="width: 100%"></div>
+            </div>
+            <p class="text-xs text-slate-400">Demonstrated total operational excellence with 100% compliance across internal process audits and tests.</p>
+          </div>
+
+          <div class="glass-card p-6 rounded-3xl space-y-3">
+            <div class="flex justify-between items-center text-sm font-semibold">
+              <span class="text-slate-200 flex items-center"><i class="fa-solid fa-clock-rotate-left text-blue-400 mr-2"></i> DXC Time & Training</span>
+              <span class="font-mono text-blue-400 font-bold text-lg">100%</span>
+            </div>
+            <div class="w-full bg-slate-800 h-3 rounded-full overflow-hidden">
+              <div class="bg-gradient-to-r from-blue-500 to-indigo-500 h-full rounded-full" style="width: 100%"></div>
+            </div>
+            <p class="text-xs text-slate-400">Achieved 100% compliance in both DXC Time reporting and all mandatory enterprise training modules.</p>
+          </div>
+
+          <div class="glass-card p-6 rounded-3xl space-y-3">
+            <div class="flex justify-between items-center text-sm font-semibold">
+              <span class="text-slate-200 flex items-center"><i class="fa-solid fa-face-smile text-sky-400 mr-2"></i> CSAT Rating</span>
+              <span class="font-mono text-sky-400 font-bold text-lg">99.2%</span>
+            </div>
+            <div class="w-full bg-slate-800 h-3 rounded-full overflow-hidden">
+              <div class="bg-gradient-to-r from-sky-500 to-cyan-400 h-full rounded-full" style="width: 99.2%"></div>
+            </div>
+            <p class="text-xs text-slate-400">Maintained strong client focus, delivering highest CSAT score in a month across the account.</p>
+          </div>
+
+          <div class="glass-card p-6 rounded-3xl space-y-3">
+            <div class="flex justify-between items-center text-sm font-semibold">
+              <span class="text-slate-200 flex items-center"><i class="fa-solid fa-headset text-purple-400 mr-2"></i> First Call Resolution (FCR)</span>
+              <span class="font-mono text-purple-400 font-bold text-lg">92%</span>
+            </div>
+            <div class="w-full bg-slate-800 h-3 rounded-full overflow-hidden">
+              <div class="bg-gradient-to-r from-purple-500 to-pink-500 h-full rounded-full" style="width: 92%"></div>
+            </div>
+            <p class="text-xs text-slate-400">Achieved Highest FCR in a month by resolving complex issues on initial contact.</p>
+          </div>
+
+          <div class="glass-card p-6 rounded-3xl space-y-3">
+            <div class="flex justify-between items-center text-sm font-semibold">
+              <span class="text-slate-200 flex items-center"><i class="fa-solid fa-shield-virus text-teal-400 mr-2"></i> Zero Client Complaints</span>
+              <span class="font-mono text-teal-400 font-bold text-lg">0 Esc.</span>
+            </div>
+            <div class="w-full bg-slate-800 h-3 rounded-full overflow-hidden">
+              <div class="bg-gradient-to-r from-teal-400 to-emerald-400 h-full rounded-full" style="width: 100%"></div>
+            </div>
+            <p class="text-xs text-slate-400">Delivered zero client or internal complaints, ensuring high-quality outcomes and stakeholder satisfaction.</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 4. Details about the working process (Looking Ahead) -->
+    <section id="roadmap" class="py-20 relative">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-3xl mx-auto mb-16">
+          <h2 class="text-xs font-mono font-bold tracking-widest text-sky-400 uppercase mb-2">// Looking Ahead</h2>
+          <p class="text-3xl sm:text-4xl font-extrabold text-slate-100">FY27 Development Focus & Strategic Goals</p>
+          <div class="w-12 h-1 bg-sky-500 mx-auto rounded-full mt-4"></div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          
+          <div class="glass-card p-8 rounded-3xl space-y-4 border-t-4 border-t-sky-500">
+            <div class="p-3.5 rounded-2xl bg-sky-500/10 text-sky-400 w-fit">
+              <i class="fa-solid fa-certificate text-2xl"></i>
+            </div>
+            <h3 class="text-xl font-bold text-slate-100">Professional Certifications</h3>
+            <p class="text-xs font-mono text-sky-400">Attain 1–2 Industry Certifications</p>
+            <p class="text-slate-300 text-sm leading-relaxed">
+              Enhance technical proficiency and broaden domain depth by attaining 1–2 industry-relevant certifications in Apple macOS Engineering, Jamf Pro, or Microsoft Identity & Cloud Security.
+            </p>
+          </div>
+
+          <div class="glass-card p-8 rounded-3xl space-y-4 border-t-4 border-t-emerald-500">
+            <div class="p-3.5 rounded-2xl bg-emerald-500/10 text-emerald-400 w-fit">
+              <i class="fa-solid fa-gears text-2xl"></i>
+            </div>
+            <h3 class="text-xl font-bold text-slate-100">Automation & Efficiency</h3>
+            <p class="text-xs font-mono text-emerald-400">Target 10–15% Effort Reduction</p>
+            <p class="text-slate-300 text-sm leading-relaxed">
+              Identify and execute process automation initiatives targeting a 10–15% reduction in manual endpoint management efforts, driving measurable productivity and quality gains.
+            </p>
+          </div>
+
+          <div class="glass-card p-8 rounded-3xl space-y-4 border-t-4 border-t-amber-500">
+            <div class="p-3.5 rounded-2xl bg-amber-500/10 text-amber-400 w-fit">
+              <i class="fa-solid fa-lightbulb text-2xl"></i>
+            </div>
+            <h3 class="text-xl font-bold text-slate-100">Process Innovation & Coaching</h3>
+            <p class="text-xs font-mono text-amber-400">2–3 Quarterly Ideas & Skill Mastery</p>
+            <p class="text-slate-300 text-sm leading-relaxed">
+              Initiate 2–3 process improvement ideas per quarter, deepen advanced troubleshooting expertise, and lead team upskilling while sustaining 100% metric compliance.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 5. Tools I use (Technical Stack) -->
+    <section id="skills" class="py-20 relative">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-3xl mx-auto mb-16">
+          <h2 class="text-xs font-mono font-bold tracking-widest text-sky-400 uppercase mb-2">// Technical Stack</h2>
+          <p class="text-3xl sm:text-4xl font-extrabold text-slate-100">Core Technical Capabilities & Enterprise Tools</p>
+          <div class="w-12 h-1 bg-sky-500 mx-auto rounded-full mt-4"></div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8" id="skillsContainer">
+          
+          <div class="glass-card p-7 rounded-3xl space-y-5">
+            <div class="flex items-center space-x-3 mb-2">
+              <div class="p-3 rounded-2xl bg-sky-500/10 text-sky-400 border border-sky-500/20">
+                <i class="fa-brands fa-apple text-2xl"></i>
+              </div>
+              <div>
+                <h3 class="font-bold text-lg text-slate-100">Jamf Pro & Apple Business Manager</h3>
+                <p class="text-xs text-slate-400">Enterprise Apple Fleet Architecture</p>
+              </div>
+            </div>
+            
+            <div class="space-y-4">
+              <div>
+                <div class="flex justify-between text-xs font-semibold mb-1">
+                  <span class="text-slate-300">Jamf Pro Smart Groups, Scripts & Config Profiles</span>
+                  <span class="text-sky-400 font-mono">95%</span>
+                </div>
+                <div class="w-full bg-slate-800 h-2.5 rounded-full overflow-hidden">
+                  <div class="bg-sky-500 h-full rounded-full" style="width: 95%"></div>
+                </div>
+              </div>
+
+              <div>
+                <div class="flex justify-between text-xs font-semibold mb-1">
+                  <span class="text-slate-300">Apple Business Manager (ABM) & Zero-Touch ADE</span>
+                  <span class="text-sky-400 font-mono">94%</span>
+                </div>
+                <div class="w-full bg-slate-800 h-2.5 rounded-full overflow-hidden">
+                  <div class="bg-sky-500 h-full rounded-full" style="width: 94%"></div>
+                </div>
+              </div>
+
+              <div>
+                <div class="flex justify-between text-xs font-semibold mb-1">
+                  <span class="text-slate-300">Automated macOS Patch Management & Upgrades</span>
+                  <span class="text-sky-400 font-mono">92%</span>
+                </div>
+                <div class="w-full bg-slate-800 h-2.5 rounded-full overflow-hidden">
+                  <div class="bg-sky-500 h-full rounded-full" style="width: 92%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="glass-card p-7 rounded-3xl space-y-5">
+            <div class="flex items-center space-x-3 mb-2">
+              <div class="p-3 rounded-2xl bg-amber-500/10 text-amber-400 border border-amber-500/20">
+                <i class="fa-solid fa-wrench text-2xl"></i>
+              </div>
+              <div>
+                <h3 class="font-bold text-lg text-slate-100">Advanced Troubleshooting & L1 Coaching</h3>
+                <p class="text-xs text-slate-400">Case Aging, Trend Analysis & Esc. Reduction</p>
+              </div>
+            </div>
+            
+            <div class="space-y-4">
+              <div>
+                <div class="flex justify-between text-xs font-semibold mb-1">
+                  <span class="text-slate-300">Ticket Volume & Reassignment Trend Monitoring</span>
+                  <span class="text-amber-400 font-mono">96%</span>
+                </div>
+                <div class="w-full bg-slate-800 h-2.5 rounded-full overflow-hidden">
+                  <div class="bg-amber-500 h-full rounded-full" style="width: 96%"></div>
+                </div>
+              </div>
+
+              <div>
+                <div class="flex justify-between text-xs font-semibold mb-1">
+                  <span class="text-slate-300">L1 Coaching & Escalation Quality Guidance</span>
+                  <span class="text-amber-400 font-mono">95%</span>
+                </div>
+                <div class="w-full bg-slate-800 h-2.5 rounded-full overflow-hidden">
+                  <div class="bg-amber-500 h-full rounded-full" style="width: 95%"></div>
+                </div>
+              </div>
+
+              <div>
+                <div class="flex justify-between text-xs font-semibold mb-1">
+                  <span class="text-slate-300">PlatformX Integration & ILC Escalation Routing</span>
+                  <span class="text-amber-400 font-mono">92%</span>
+                </div>
+                <div class="w-full bg-slate-800 h-2.5 rounded-full overflow-hidden">
+                  <div class="bg-amber-500 h-full rounded-full" style="width: 92%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="glass-card p-7 rounded-3xl space-y-5">
+            <div class="flex items-center space-x-3 mb-2">
+              <div class="p-3 rounded-2xl bg-blue-500/10 text-blue-400 border border-blue-500/20">
+                <i class="fa-brands fa-windows text-2xl"></i>
+              </div>
+              <div>
+                <h3 class="font-bold text-lg text-slate-100">Microsoft Intune & Entra ID (Azure AD)</h3>
+                <p class="text-xs text-slate-400">Cloud Identity & Zero Trust Access</p>
+              </div>
+            </div>
+            
+            <div class="space-y-4">
+              <div>
+                <div class="flex justify-between text-xs font-semibold mb-1">
+                  <span class="text-slate-300">Microsoft Intune MDM & Device Compliance</span>
+                  <span class="text-blue-400 font-mono">92%</span>
+                </div>
+                <div class="w-full bg-slate-800 h-2.5 rounded-full overflow-hidden">
+                  <div class="bg-blue-500 h-full rounded-full" style="width: 92%"></div>
+                </div>
+              </div>
+
+              <div>
+                <div class="flex justify-between text-xs font-semibold mb-1">
+                  <span class="text-slate-300">Entra ID Conditional Access (CA) & SSO/MFA</span>
+                  <span class="text-blue-400 font-mono">90%</span>
+                </div>
+                <div class="w-full bg-slate-800 h-2.5 rounded-full overflow-hidden">
+                  <div class="bg-blue-500 h-full rounded-full" style="width: 90%"></div>
+                </div>
+              </div>
+
+              <div>
+                <div class="flex justify-between text-xs font-semibold mb-1">
+                  <span class="text-slate-300">FileVault 2 Encryption Key Escrow into Intune</span>
+                  <span class="text-blue-400 font-mono">95%</span>
+                </div>
+                <div class="w-full bg-slate-800 h-2.5 rounded-full overflow-hidden">
+                  <div class="bg-blue-500 h-full rounded-full" style="width: 95%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="glass-card p-7 rounded-3xl space-y-5">
+            <div class="flex items-center space-x-3 mb-2">
+              <div class="p-3 rounded-2xl bg-purple-500/10 text-purple-400 border border-purple-500/20">
+                <i class="fa-solid fa-headset text-2xl"></i>
+              </div>
+              <div>
+                <h3 class="font-bold text-lg text-slate-100">ServiceNow ITSM & Enterprise Tools</h3>
+                <p class="text-xs text-slate-400">Nexthink, BTRS, ASD, D365 & Zscaler</p>
+              </div>
+            </div>
+            
+            <div class="space-y-4">
+              <div>
+                <div class="flex justify-between text-xs font-semibold mb-1">
+                  <span class="text-slate-300">ServiceNow Incident & Problem Management</span>
+                  <span class="text-purple-400 font-mono">94%</span>
+                </div>
+                <div class="w-full bg-slate-800 h-2.5 rounded-full overflow-hidden">
+                  <div class="bg-purple-500 h-full rounded-full" style="width: 94%"></div>
+                </div>
+              </div>
+
+              <div>
+                <div class="flex justify-between text-xs font-semibold mb-1">
+                  <span class="text-slate-300">Zscaler Internet Access (ZIA) & Corporate VPN</span>
+                  <span class="text-purple-400 font-mono">88%</span>
+                </div>
+                <div class="w-full bg-slate-800 h-2.5 rounded-full overflow-hidden">
+                  <div class="bg-purple-500 h-full rounded-full" style="width: 88%"></div>
+                </div>
+              </div>
+
+              <div>
+                <div class="flex justify-between text-xs font-semibold mb-1">
+                  <span class="text-slate-300">NextThink DEX, BTRS, ASD, D365 & RDP</span>
+                  <span class="text-purple-400 font-mono">95%</span>
+                </div>
+                <div class="w-full bg-slate-800 h-2.5 rounded-full overflow-hidden">
+                  <div class="bg-purple-500 h-full rounded-full" style="width: 95%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="mt-12 flex flex-wrap justify-center gap-2 max-w-5xl mx-auto">
+          <span class="px-3.5 py-1.5 rounded-xl glass text-xs font-mono text-slate-300 hover:text-white border border-slate-700/60 transition-all"><i class="fa-brands fa-apple text-sky-400 mr-1.5"></i> Jamf Pro</span>
+          <span class="px-3.5 py-1.5 rounded-xl glass text-xs font-mono text-slate-300 hover:text-white border border-slate-700/60 transition-all"><i class="fa-brands fa-apple text-sky-400 mr-1.5"></i> Apple Business Manager (ABM)</span>
+          <span class="px-3.5 py-1.5 rounded-xl glass text-xs font-mono text-slate-300 hover:text-white border border-slate-700/60 transition-all"><i class="fa-brands fa-windows text-blue-400 mr-1.5"></i> Microsoft Intune</span>
+          <span class="px-3.5 py-1.5 rounded-xl glass text-xs font-mono text-slate-300 hover:text-white border border-slate-700/60 transition-all"><i class="fa-brands fa-windows text-blue-400 mr-1.5"></i> Microsoft Entra ID (Azure AD)</span>
+          <span class="px-3.5 py-1.5 rounded-xl glass text-xs font-mono text-slate-300 hover:text-white border border-slate-700/60 transition-all"><i class="fa-solid fa-headset text-purple-400 mr-1.5"></i> ServiceNow ITSM</span>
+          <span class="px-3.5 py-1.5 rounded-xl glass text-xs font-mono text-slate-300 hover:text-white border border-slate-700/60 transition-all"><i class="fa-solid fa-chart-line text-emerald-400 mr-1.5"></i> NextThink DEX</span>
+          <span class="px-3.5 py-1.5 rounded-xl glass text-xs font-mono text-slate-300 hover:text-white border border-slate-700/60 transition-all"><i class="fa-solid fa-route text-amber-400 mr-1.5"></i> PlatformX Integration</span>
+          <span class="px-3.5 py-1.5 rounded-xl glass text-xs font-mono text-slate-300 hover:text-white border border-slate-700/60 transition-all"><i class="fa-solid fa-microchip text-slate-400 mr-1.5"></i> BTRS</span>
+          <span class="px-3.5 py-1.5 rounded-xl glass text-xs font-mono text-slate-300 hover:text-white border border-slate-700/60 transition-all"><i class="fa-solid fa-shield text-slate-400 mr-1.5"></i> ASD</span>
+          <span class="px-3.5 py-1.5 rounded-xl glass text-xs font-mono text-slate-300 hover:text-white border border-slate-700/60 transition-all"><i class="fa-solid fa-database text-blue-400 mr-1.5"></i> Dynamics 365 (D365)</span>
+          <span class="px-3.5 py-1.5 rounded-xl glass text-xs font-mono text-slate-300 hover:text-white border border-slate-700/60 transition-all"><i class="fa-solid fa-globe text-emerald-400 mr-1.5"></i> Zscaler Proxy (ZIA)</span>
+          <span class="px-3.5 py-1.5 rounded-xl glass text-xs font-mono text-slate-300 hover:text-white border border-slate-700/60 transition-all"><i class="fa-solid fa-lock text-sky-400 mr-1.5"></i> Conditional Access (CA)</span>
+          <span class="px-3.5 py-1.5 rounded-xl glass text-xs font-mono text-slate-300 hover:text-white border border-slate-700/60 transition-all"><i class="fa-solid fa-desktop text-purple-400 mr-1.5"></i> Remote Desktop (RDP)</span>
+          <span class="px-3.5 py-1.5 rounded-xl glass text-xs font-mono text-slate-300 hover:text-white border border-slate-700/60 transition-all"><i class="fa-solid fa-key text-amber-400 mr-1.5"></i> FileVault 2 Encryption</span>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 6. Projects list -->
+    <section id="projects" class="py-20 relative">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-3xl mx-auto mb-16">
+          <h2 class="text-xs font-mono font-bold tracking-widest text-sky-400 uppercase mb-2">// Portfolio</h2>
+          <p class="text-3xl sm:text-4xl font-extrabold text-slate-100">Work Experience & Projects</p>
+          <div class="w-12 h-1 bg-sky-500 mx-auto rounded-full mt-4"></div>
+        </div>
+
+        <!-- Work Related / Enterprise Section -->
+        <div class="mb-16">
+          <div class="flex items-center space-x-3 mb-8 border-b border-slate-800 pb-4">
+            <div class="p-3 rounded-2xl bg-sky-500/10 text-sky-400 border border-sky-500/20">
+              <i class="fa-solid fa-building text-xl"></i>
+            </div>
+            <div>
+              <h3 class="text-2xl font-bold text-slate-100">Enterprise Client Engagements</h3>
+              <p class="text-xs text-slate-400 mt-1">Professional work experience and client accounts</p>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+            
+            <div class="project-card glass-card rounded-3xl overflow-hidden flex flex-col group border border-slate-800 relative" data-category="enterprise">
+              <!-- Philips Background Layer -->
+              <div class="absolute inset-0 z-0 pointer-events-none opacity-10 group-hover:opacity-20 transition-opacity duration-500">
+                <img src="Philips.jpg" alt="Philips Background" class="w-full h-full object-cover" />
+              </div>
+              
+              <div class="p-6 bg-gradient-to-br from-sky-950/80 to-slate-900 border-b border-slate-800 space-y-3 relative z-10">
+                <div class="flex items-center justify-between">
+                  <span class="px-2.5 py-1 rounded-md bg-sky-500/20 text-sky-300 text-xs font-mono font-semibold"><i class="fa-solid fa-building mr-1"></i> GLOBAL CLIENT</span>
+                  <span class="text-xs text-emerald-400 font-mono"><i class="fa-solid fa-circle-check mr-1"></i> ACTIVE L3 ANALYST</span>
+                </div>
+                <h3 class="text-2xl font-bold text-slate-100 group-hover:text-sky-400 transition-colors flex items-center"><img src="Philips.jpg" alt="Philips" class="h-6 w-6 rounded-md bg-white p-1 mr-2 object-contain group-hover:scale-110 group-hover:-translate-y-1 transition-all duration-300 shadow-md" />Royal Philips Account</h3>
+                <p class="text-xs font-mono text-sky-400">L3 macOS Support Analyst & Fleet Engineer</p>
+              </div>
+
+              <div class="p-6 flex-1 flex flex-col justify-between space-y-4 relative z-10">
+                <p class="text-slate-300 text-sm leading-relaxed">
+                  Delivering tier-3 technical escalations and endpoint engineering across Royal Philips' global Apple estate (1,500+ endpoints). Architecting Jamf Pro smart groups, configuration profiles, automated patch policies, and Apple Business Manager (ABM).
+                </p>
+
+                <div class="space-y-2 pt-2 border-t border-slate-800">
+                  <div class="flex items-center space-x-2 text-xs text-slate-300">
+                    <i class="fa-solid fa-shield text-sky-400 w-4"></i>
+                    <span>Zero Trust compliance via Intune & Entra ID</span>
+                  </div>
+                  <div class="flex items-center space-x-2 text-xs text-slate-300">
+                    <i class="fa-solid fa-key text-sky-400 w-4"></i>
+                    <span>FileVault 2 Encryption Key Escrow</span>
+                  </div>
+                </div>
+
+                <div class="flex flex-wrap gap-2 pt-2 border-t border-slate-800/80">
+                  <span class="px-2.5 py-1 rounded-md bg-slate-800 text-slate-300 text-xs font-mono">Jamf Pro</span>
+                  <span class="px-2.5 py-1 rounded-md bg-slate-800 text-slate-300 text-xs font-mono">ABM</span>
+                  <span class="px-2.5 py-1 rounded-md bg-slate-800 text-slate-300 text-xs font-mono">Entra ID</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-card glass-card rounded-3xl overflow-hidden flex flex-col group border border-slate-800 relative" data-category="enterprise">
+              <!-- GF Background Layer -->
+              <div class="absolute inset-0 z-0 pointer-events-none opacity-10 group-hover:opacity-20 transition-opacity duration-500">
+                <img src="GF.jpg" alt="Georg Fischer Background" class="w-full h-full object-cover" />
+              </div>
+
+              <div class="p-6 bg-gradient-to-br from-blue-950/80 to-slate-900 border-b border-slate-800 space-y-3 relative z-10">
+                <div class="flex items-center justify-between">
+                  <span class="px-2.5 py-1 rounded-md bg-blue-500/20 text-blue-300 text-xs font-mono font-semibold"><i class="fa-solid fa-building mr-1"></i> ENTERPRISE CLIENT</span>
+                  <span class="text-xs text-amber-400 font-mono"><i class="fa-solid fa-clock-rotate-left mr-1"></i> L1 & L1.5 SUPPORT</span>
+                </div>
+                <h3 class="text-2xl font-bold text-slate-100 group-hover:text-blue-400 transition-colors flex items-center"><img src="GF.jpg" alt="GF" class="h-6 w-6 rounded-md bg-white p-1 mr-2 object-contain group-hover:scale-110 group-hover:-translate-y-1 transition-all duration-300 shadow-md" />Georg Fischer Account</h3>
+                <p class="text-xs font-mono text-blue-400">Windows Endpoint & Advanced PlatformX Support</p>
+              </div>
+
+              <div class="p-6 flex-1 flex flex-col justify-between space-y-4 relative z-10">
+                <p class="text-slate-300 text-sm leading-relaxed">
+                  Delivered L1 and L1.5 endpoint administration across Windows environments and M365 suites. Monitored ticket volume, coached L1 engineers, and managed PlatformX integration redirection to secure SLA stability and resolution quality.
+                </p>
+
+                <div class="space-y-2 pt-2 border-t border-slate-800">
+                  <div class="flex items-center space-x-2 text-xs text-slate-300">
+                    <i class="fa-solid fa-globe text-blue-400 w-4"></i>
+                    <span>Zscaler proxy, VPN & automated MDM enrollments</span>
+                  </div>
+                  <div class="flex items-center space-x-2 text-xs text-slate-300">
+                    <i class="fa-solid fa-route text-amber-400 w-4"></i>
+                    <span>PlatformX integration & ILC escalation protocols</span>
+                  </div>
+                </div>
+
+                <div class="flex flex-wrap gap-2 pt-2 border-t border-slate-800/80">
+                  <span class="px-2.5 py-1 rounded-md bg-slate-800 text-slate-300 text-xs font-mono">ServiceNow</span>
+                  <span class="px-2.5 py-1 rounded-md bg-slate-800 text-slate-300 text-xs font-mono">M365</span>
+                  <span class="px-2.5 py-1 rounded-md bg-slate-800 text-slate-300 text-xs font-mono">PlatformX</span>
+                  <span class="px-2.5 py-1 rounded-md bg-slate-800 text-slate-300 text-xs font-mono">Zscaler</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Technical & Academic Projects Section -->
+        <div>
+          <div class="flex items-center space-x-3 mb-8 border-b border-slate-800 pb-4">
+            <div class="p-3 rounded-2xl bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">
+              <i class="fa-solid fa-laptop-code text-xl"></i>
+            </div>
+            <div>
+              <h3 class="text-2xl font-bold text-slate-100">Technical & Academic Projects</h3>
+              <p class="text-xs text-slate-400 mt-1">Standalone web applications, data analytics, and embedded systems</p>
+            </div>
+          </div>
+          
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            
+            <div class="project-card glass-card rounded-3xl overflow-hidden flex flex-col group border border-slate-800" data-category="webapp">
+              <div class="p-6 bg-gradient-to-br from-emerald-950/80 to-slate-900 border-b border-slate-800 space-y-3">
+                <div class="flex items-center justify-between">
+                  <span class="px-2.5 py-1 rounded-md bg-emerald-500/20 text-emerald-300 text-xs font-mono font-semibold"><i class="fa-solid fa-laptop-code mr-1"></i> WEB APPLICATION</span>
+                  <span class="text-xs text-emerald-400 font-mono"><i class="fa-solid fa-calendar mr-1"></i> APR 2023 – AUG 2023</span>
+                </div>
+                <h3 class="text-2xl font-bold text-slate-100 group-hover:text-emerald-400 transition-colors flex items-center"><img src="https://logo.clearbit.com/india.gov.in" alt="Gov" class="h-6 w-6 rounded-md bg-white p-0.5 mr-2 object-contain group-hover:scale-110 group-hover:-translate-y-1 transition-all duration-300 shadow-md" />Department Of Agriculture</h3>
+                <p class="text-xs font-mono text-emerald-400">Full-Time Project • Myself (Offsite)</p>
+              </div>
+
+              <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+                <p class="text-slate-300 text-sm leading-relaxed">
+                  “Department of Agriculture” is a web platform developed to assist farmers in accessing information about government facilities, modern machinery, agricultural technologies, and online machinery/facility booking services.
+                </p>
+
+                <div class="space-y-2 pt-2 border-t border-slate-800">
+                  <div class="flex items-center space-x-2 text-xs text-slate-300">
+                    <i class="fa-solid fa-wheat-awn text-emerald-400 w-4"></i>
+                    <span>Machinery & agricultural technology portal</span>
+                  </div>
+                  <div class="flex items-center space-x-2 text-xs text-slate-300">
+                    <i class="fa-solid fa-calendar-check text-emerald-400 w-4"></i>
+                    <span>Integrated online facility booking module</span>
+                  </div>
+                </div>
+
+                <div class="flex flex-wrap gap-2 pt-2 border-t border-slate-800/80">
+                  <span class="px-2.5 py-1 rounded-md bg-slate-800 text-slate-300 text-xs font-mono">Web Portal</span>
+                  <span class="px-2.5 py-1 rounded-md bg-slate-800 text-slate-300 text-xs font-mono">Database</span>
+                  <span class="px-2.5 py-1 rounded-md bg-slate-800 text-slate-300 text-xs font-mono">UI/UX</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-card glass-card rounded-3xl overflow-hidden flex flex-col group border border-slate-800" data-category="tech">
+              <div class="p-6 bg-gradient-to-br from-indigo-950/80 to-slate-900 border-b border-slate-800 space-y-3">
+                <div class="flex items-center justify-between">
+                  <span class="px-2.5 py-1 rounded-md bg-indigo-500/20 text-indigo-300 text-xs font-mono font-semibold"><i class="fa-solid fa-chart-pie mr-1"></i> DATA ANALYTICS</span>
+                  <span class="text-xs text-indigo-400 font-mono"><i class="fa-solid fa-calendar mr-1"></i> FEB 2023 – MAR 2023</span>
+                </div>
+                <h3 class="text-2xl font-bold text-slate-100 group-hover:text-indigo-400 transition-colors flex items-center"><img src="https://logo.clearbit.com/iplt20.com" alt="IPL" class="h-6 w-6 rounded-md bg-white p-0.5 mr-2 object-contain group-hover:scale-110 group-hover:-translate-y-1 transition-all duration-300 shadow-md" />IPL Data Analysis</h3>
+                <p class="text-xs font-mono text-indigo-400">Full-Time Analytics Project • Myself (Offsite)</p>
+              </div>
+
+              <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+                <p class="text-slate-300 text-sm leading-relaxed">
+                  Comprehensive data analytics project examining Indian Premier League (IPL) match datasets from 2008 to 2020. Evaluated player performances, team win rates, match conditions, and statistical trends across 12+ seasons.
+                </p>
+
+                <div class="space-y-2 pt-2 border-t border-slate-800">
+                  <div class="flex items-center space-x-2 text-xs text-slate-300">
+                    <i class="fa-solid fa-chart-line text-indigo-400 w-4"></i>
+                    <span>Historical match trend analysis (2008-2020)</span>
+                  </div>
+                  <div class="flex items-center space-x-2 text-xs text-slate-300">
+                    <i class="fa-solid fa-trophy text-indigo-400 w-4"></i>
+                    <span>Player performance & win probability modeling</span>
+                  </div>
+                </div>
+
+                <div class="flex flex-wrap gap-2 pt-2 border-t border-slate-800/80">
+                  <span class="px-2.5 py-1 rounded-md bg-slate-800 text-slate-300 text-xs font-mono">Data Analysis</span>
+                  <span class="px-2.5 py-1 rounded-md bg-slate-800 text-slate-300 text-xs font-mono">Statistics</span>
+                  <span class="px-2.5 py-1 rounded-md bg-slate-800 text-slate-300 text-xs font-mono">Visualization</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-card glass-card rounded-3xl overflow-hidden flex flex-col group border border-slate-800" data-category="tech">
+              <div class="p-6 bg-gradient-to-br from-purple-950/80 to-slate-900 border-b border-slate-800 space-y-3">
+                <div class="flex items-center justify-between">
+                  <span class="px-2.5 py-1 rounded-md bg-purple-500/20 text-purple-300 text-xs font-mono font-semibold"><i class="fa-solid fa-robot mr-1"></i> ROBOTICS & HARDWARE</span>
+                  <span class="text-xs text-purple-400 font-mono"><i class="fa-solid fa-calendar mr-1"></i> JAN 2023 – MAR 2023</span>
+                </div>
+                <h3 class="text-2xl font-bold text-slate-100 group-hover:text-purple-400 transition-colors">Obstacle Avoiding Robot</h3>
+                <p class="text-xs font-mono text-purple-400">Full-Time Embedded Project • Myself (Offsite)</p>
+              </div>
+
+              <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+                <p class="text-slate-300 text-sm leading-relaxed">
+                  Designed and built an autonomous mobile robot capable of navigating dynamic environments without human intervention by detecting and evading physical obstacles using ultrasonic/IR sensors and real-time motor control logic.
+                </p>
+
+                <div class="space-y-2 pt-2 border-t border-slate-800">
+                  <div class="flex items-center space-x-2 text-xs text-slate-300">
+                    <i class="fa-solid fa-microchip text-purple-400 w-4"></i>
+                    <span>Autonomous collision avoidance logic</span>
+                  </div>
+                  <div class="flex items-center space-x-2 text-xs text-slate-300">
+                    <i class="fa-solid fa-wave-square text-purple-400 w-4"></i>
+                    <span>Real-time sensor processing & motor control</span>
+                  </div>
+                </div>
+
+                <div class="flex flex-wrap gap-2 pt-2 border-t border-slate-800/80">
+                  <span class="px-2.5 py-1 rounded-md bg-slate-800 text-slate-300 text-xs font-mono">Robotics</span>
+                  <span class="px-2.5 py-1 rounded-md bg-slate-800 text-slate-300 text-xs font-mono">Microcontrollers</span>
+                  <span class="px-2.5 py-1 rounded-md bg-slate-800 text-slate-300 text-xs font-mono">Sensors</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-card glass-card rounded-3xl overflow-hidden flex flex-col group border border-slate-800" data-category="webapp">
+              <div class="p-6 bg-gradient-to-br from-teal-950/80 to-slate-900 border-b border-slate-800 space-y-3">
+                <div class="flex items-center justify-between">
+                  <span class="px-2.5 py-1 rounded-md bg-teal-500/20 text-teal-300 text-xs font-mono font-semibold"><i class="fa-solid fa-car mr-1"></i> AUTOMOTIVE PLATFORM</span>
+                  <span class="text-xs text-teal-400 font-mono"><i class="fa-solid fa-calendar mr-1"></i> JUN 2021 – OCT 2021</span>
+                </div>
+                <h3 class="text-2xl font-bold text-slate-100 group-hover:text-teal-400 transition-colors"><i class="fa-solid fa-warehouse text-teal-500 mr-2"></i>AUTO MONKS</h3>
+                <p class="text-xs font-mono text-teal-400">Full-Time Onsite Project • Rajshree Garage</p>
+              </div>
+
+              <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+                <p class="text-slate-300 text-sm leading-relaxed">
+                  Automotive management system built for Rajshree Garage handling sales, servicing schedules for 4-wheelers, and an e-commerce procurement system allowing clients to order genuine spare parts online.
+                </p>
+
+                <div class="space-y-2 pt-2 border-t border-slate-800">
+                  <div class="flex items-center space-x-2 text-xs text-slate-300">
+                    <i class="fa-solid fa-wrench text-teal-400 w-4"></i>
+                    <span>4-wheeler sales & garage servicing workflow</span>
+                  </div>
+                  <div class="flex items-center space-x-2 text-xs text-slate-300">
+                    <i class="fa-solid fa-cart-shopping text-teal-400 w-4"></i>
+                    <span>Online spare parts purchasing portal</span>
+                  </div>
+                </div>
+
+                <div class="flex flex-wrap gap-2 pt-2 border-t border-slate-800/80">
+                  <span class="px-2.5 py-1 rounded-md bg-slate-800 text-slate-300 text-xs font-mono">Automotive</span>
+                  <span class="px-2.5 py-1 rounded-md bg-slate-800 text-slate-300 text-xs font-mono">E-Commerce</span>
+                  <span class="px-2.5 py-1 rounded-md bg-slate-800 text-slate-300 text-xs font-mono">Inventory</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 7. Remaining sections (Recognitions & Contact) -->
+    <section id="recognitions" class="py-20 relative bg-slate-900/40">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-3xl mx-auto mb-16">
+          <h2 class="text-xs font-mono font-bold tracking-widest text-sky-400 uppercase mb-2">// Workday Feedback & Education</h2>
+          <p class="text-3xl sm:text-4xl font-extrabold text-slate-100">Manager Recognitions & Academic Qualifications</p>
+          <div class="w-12 h-1 bg-sky-500 mx-auto rounded-full mt-4"></div>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+          
+          <div class="glass-card p-8 rounded-3xl space-y-6 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between pb-4 border-b border-slate-800 mb-6">
+                <div class="flex items-center space-x-3">
+                  <div class="p-2 rounded-2xl bg-slate-100 border border-slate-200 flex items-center justify-center w-12 h-12 shrink-0 shadow-lg animate-float hover:scale-110 transition-transform duration-300 cursor-default">
+                    <img src="dxc.jpg" alt="DXC" class="w-full h-full object-contain rounded-xl" />
+                  </div>
+                  <div>
+                    <h3 class="text-xl font-bold text-slate-100">DXC Recognitions Stream</h3>
+                    <p class="text-xs text-slate-400">Feedback Milestones from Manager Gautham Raj Shetty</p>
+                  </div>
+                </div>
+                <span class="px-3 py-1 rounded-full bg-amber-500/20 text-amber-300 text-xs font-mono font-bold hidden sm:block">10 AWARDS</span>
+              </div>
+
+              <div class="space-y-4 max-h-[380px] overflow-y-auto pr-2">
+                
+                <div class="p-4 rounded-2xl bg-slate-900/80 border border-slate-800/80 space-y-1">
+                  <div class="flex items-center justify-between text-xs">
+                    <span class="font-bold text-amber-400"><i class="fa-solid fa-headset mr-1"></i> Highest First Call Resolution</span>
+                    <span class="font-mono text-slate-400">01/28/2025</span>
+                  </div>
+                  <p class="text-xs text-slate-300 italic">"In recognition of Contributing highest First Call Resolution. Your hard work is helping us delight customers and drive growth."</p>
+                </div>
+
+                <div class="p-4 rounded-2xl bg-slate-900/80 border border-slate-800/80 space-y-1">
+                  <div class="flex items-center justify-between text-xs">
+                    <span class="font-bold text-sky-400"><i class="fa-solid fa-phone-volume mr-1"></i> Highest Calls & Chats Handled</span>
+                    <span class="font-mono text-slate-400">01/28/2025</span>
+                  </div>
+                  <p class="text-xs text-slate-300 italic">"In recognition of handling highest number of calls and chats. Thank you for your contributions!"</p>
+                </div>
+
+                <div class="p-4 rounded-2xl bg-slate-900/80 border border-slate-800/80 space-y-1">
+                  <div class="flex items-center justify-between text-xs">
+                    <span class="font-bold text-emerald-400"><i class="fa-solid fa-graduation-cap mr-1"></i> Completion of VITL Trainings</span>
+                    <span class="font-mono text-slate-400">03/28/2025</span>
+                  </div>
+                  <p class="text-xs text-slate-300 italic">"In recognition for completion of VITL trainings. Congratulations on reaching this milestone!"</p>
+                </div>
+
+                <div class="p-4 rounded-2xl bg-slate-900/80 border border-slate-800/80 space-y-1">
+                  <div class="flex items-center justify-between text-xs">
+                    <span class="font-bold text-purple-400"><i class="fa-solid fa-award mr-1"></i> Milestone Recognition</span>
+                    <span class="font-mono text-slate-400">02/28/2026</span>
+                  </div>
+                  <p class="text-xs text-slate-300 italic">"DXC Recognition || Your hard work is helping us to delight customers, drive growth and establish DXC as the world's leading IT company."</p>
+                </div>
+
+                <div class="p-4 rounded-2xl bg-slate-900/80 border border-slate-800/80 space-y-1">
+                  <div class="flex items-center justify-between text-xs">
+                    <span class="font-bold text-blue-400"><i class="fa-solid fa-star mr-1"></i> Sustained Performance Recognition</span>
+                    <span class="font-mono text-slate-400">11/28/2025</span>
+                  </div>
+                  <p class="text-xs text-slate-300 italic">"Thank you for your contributions, and congratulations on reaching this milestone."</p>
+                </div>
+
+              </div>
+            </div>
+            
+            <div class="p-4 rounded-2xl bg-amber-500/10 border border-amber-500/20 flex items-center justify-between text-xs mt-4">
+              <span class="font-mono text-amber-300 font-semibold"><i class="fa-solid fa-medal mr-1.5"></i> DXC Special Honors:</span>
+              <span class="text-slate-200">Pillar of Performance Award • Extra Miller Award</span>
+            </div>
+          </div>
+
+          <div class="glass-card p-8 rounded-3xl space-y-6 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center space-x-3 pb-4 border-b border-slate-800 mb-6">
+                <div class="p-3 rounded-2xl bg-sky-500/10 text-sky-400 border border-sky-500/20">
+                  <i class="fa-solid fa-graduation-cap text-2xl"></i>
+                </div>
+                <div>
+                  <h3 class="text-xl font-bold text-slate-100">Academic Qualifications</h3>
+                  <p class="text-xs text-slate-400">Degrees & Computer Science Foundation</p>
+                </div>
+              </div>
+
+              <div class="space-y-6">
+                <div class="p-5 rounded-2xl bg-slate-900/60 border border-slate-800/80 space-y-2">
+                  <div class="flex justify-between items-start">
+                    <div>
+                      <h4 class="text-lg font-bold text-slate-100">Master of Computer Applications (MCA)</h4>
+                      <p class="text-xs font-mono text-sky-400">The Oxford College of Engineering • Graduated 2023</p>
+                    </div>
+                    <span class="px-2.5 py-1 rounded bg-sky-500/10 text-sky-400 text-xs font-mono font-bold">MASTER'S</span>
+                  </div>
+                  <p class="text-xs text-slate-400 leading-relaxed">
+                    Specialized in Advanced Computer Applications, System Architecture, Database Management, Enterprise Networks, and Software Engineering.
+                  </p>
+                </div>
+
+                <div class="p-5 rounded-2xl bg-slate-900/60 border border-slate-800/80 space-y-2">
+                  <div class="flex justify-between items-start">
+                    <div>
+                      <h4 class="text-lg font-bold text-slate-100">Bachelor of Computer Applications (BCA)</h4>
+                      <p class="text-xs font-mono text-emerald-400">Shree Dharmasthala Manjunatheswara College (SDM) • Graduated 2021</p>
+                    </div>
+                    <span class="px-2.5 py-1 rounded bg-emerald-500/10 text-emerald-400 text-xs font-mono font-bold">BACHELOR'S</span>
+                  </div>
+                  <p class="text-xs text-slate-400 leading-relaxed">
+                    Core fundamentals of Operating Systems, Programming, Data Communications, and Computer Hardware.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <section id="contact" class="py-20 relative bg-slate-900/40">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-3xl mx-auto mb-16">
+          <h2 class="text-xs font-mono font-bold tracking-widest text-sky-400 uppercase mb-2">// Get In Touch</h2>
+          <p class="text-3xl sm:text-4xl font-extrabold text-slate-100">Contact Yadav S G</p>
+          <div class="w-12 h-1 bg-sky-500 mx-auto rounded-full mt-4"></div>
+          <p class="text-slate-400 text-sm mt-4">Available for enterprise IT opportunities, macOS endpoint consultations, and professional networking.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+          
+          <div class="glass-card p-8 rounded-3xl flex flex-col items-center text-center space-y-4 group hover:border-emerald-500/50">
+            <div class="p-4 rounded-full bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 text-2xl group-hover:scale-110 transition-transform shadow-lg">
+              <i class="fa-solid fa-envelope"></i>
+            </div>
+            <div>
+              <span class="text-xs font-mono text-slate-400 uppercase mb-1 block">Professional Inquiries</span>
+              <a href="mailto:yadavsgmca2023@gmail.com" class="text-emerald-400 font-semibold text-sm sm:text-base hover:underline" id="contactEmail">yadavsgmca2023@gmail.com</a>
+            </div>
+          </div>
+
+          <div class="glass-card p-8 rounded-3xl flex flex-col items-center text-center space-y-4 group hover:border-amber-500/50">
+            <div class="p-4 rounded-full bg-amber-500/10 text-amber-400 border border-amber-500/20 text-2xl group-hover:scale-110 transition-transform shadow-lg">
+              <i class="fa-solid fa-phone"></i>
+            </div>
+            <div>
+              <span class="text-xs font-mono text-slate-400 uppercase mb-1 block">Direct Line</span>
+              <a href="tel:+917349703556" class="text-amber-400 font-semibold text-sm sm:text-base hover:underline">+91-7349703556</a>
+            </div>
+          </div>
+
+          <div class="glass-card p-8 rounded-3xl flex flex-col items-center text-center space-y-4 group hover:border-blue-500/50">
+            <div class="p-4 rounded-full bg-blue-500/10 text-blue-400 border border-blue-500/20 text-2xl group-hover:scale-110 transition-transform shadow-lg">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </div>
+            <div>
+              <span class="text-xs font-mono text-slate-400 uppercase mb-1 block">LinkedIn Profile</span>
+              <a href="https://www.linkedin.com/in/yadav-s-g-469b08390/" target="_blank" class="text-blue-400 font-semibold text-sm sm:text-base hover:underline">yadav-s-g-469b08390</a>
+            </div>
+          </div>
+
+          <div class="glass-card p-8 rounded-3xl flex flex-col items-center text-center space-y-4 group hover:border-pink-500/50">
+            <div class="p-4 rounded-full bg-pink-500/10 text-pink-400 border border-pink-500/20 text-2xl group-hover:scale-110 transition-transform shadow-lg">
+              <i class="fa-brands fa-instagram"></i>
+            </div>
+            <div>
+              <span class="text-xs font-mono text-slate-400 uppercase mb-1 block">Instagram Profile</span>
+              <a href="https://instagram.com/yadav__gowda" target="_blank" class="text-pink-400 font-semibold text-sm sm:text-base hover:underline">@yadav__gowda</a>
+            </div>
+          </div>
+
+          <div class="glass-card p-8 rounded-3xl flex flex-col items-center text-center space-y-4 group hover:border-slate-500/50">
+            <div class="p-3 rounded-2xl bg-slate-100 border border-slate-200 flex items-center justify-center w-16 h-16 shrink-0 shadow-md animate-float">
+              <img src="dxc.jpg" alt="DXC" class="w-full h-full object-contain rounded-xl" />
+            </div>
+            <div>
+              <span class="text-xs font-mono text-slate-400 uppercase mb-1 block">Current Role & Company</span>
+              <p class="text-slate-100 font-semibold text-sm sm:text-base">Infrastructure Analyst • DXC</p>
+            </div>
+          </div>
+
+          <div class="glass-card p-8 rounded-3xl flex flex-col items-center text-center space-y-4 group hover:border-sky-500/50">
+            <div class="p-3 rounded-2xl bg-slate-100 border border-slate-200 flex items-center justify-center w-16 h-16 shrink-0 shadow-md animate-float [animation-delay:1.5s]">
+              <img src="Philips.jpg" alt="Philips" class="w-full h-full object-contain rounded-xl" />
+            </div>
+            <div>
+              <span class="text-xs font-mono text-slate-400 uppercase mb-1 block">Primary Client</span>
+              <p class="text-slate-100 font-semibold text-sm sm:text-base">Royal Philips (L3 Analyst)</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-t border-slate-800/80 py-8 relative z-10 bg-slate-950">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between text-slate-400 text-xs sm:text-sm space-y-4 sm:space-y-0">
+      <p>&copy; <span id="currentYear">2026</span> <span id="footerName">Yadav S G</span>. DXC Technology Endpoint Infrastructure.</p>
+      <div class="flex items-center space-x-4">
+        <a href="https://www.linkedin.com/in/yadav-s-g-469b08390/" target="_blank" class="hover:text-blue-400 transition-colors" title="LinkedIn"><i class="fa-brands fa-linkedin text-lg"></i></a>
+        <a href="https://github.com/yadavsg" target="_blank" class="hover:text-white transition-colors" title="GitHub"><i class="fa-brands fa-github text-lg"></i></a>
+        <a href="https://instagram.com/yadav__gowda" target="_blank" class="hover:text-pink-400 transition-colors" title="Instagram"><i class="fa-brands fa-instagram text-lg"></i></a>
+        <span class="text-slate-700 mx-1">|</span>
+        <a href="#hero" class="hover:text-sky-400 transition-colors">Back to top <i class="fa-solid fa-arrow-up text-xs ml-1"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <div id="customizerDrawer" class="fixed inset-y-0 right-0 z-50 w-full sm:w-96 glass-dark border-l border-slate-700/80 p-6 shadow-2xl transform translate-x-full transition-transform duration-300 overflow-y-auto">
+    <div class="flex items-center justify-between pb-4 border-b border-slate-800">
+      <div class="flex items-center space-x-2">
+        <i class="fa-solid fa-sliders text-sky-400"></i>
+        <h3 class="font-bold text-slate-100">Live Profile Customizer</h3>
+      </div>
+      <button id="closeCustomizerBtn" class="text-slate-400 hover:text-white p-2 rounded-xl">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+
+    <div class="py-6 space-y-6 text-xs">
+      <div>
+        <label class="block text-slate-400 font-mono uppercase mb-1">Upload Profile Photo</label>
+        <div class="flex items-center space-x-2 mt-1">
+          <label class="flex-1 px-3 py-2.5 rounded-xl bg-slate-900 border border-slate-700 hover:border-sky-500 text-slate-200 text-xs cursor-pointer transition-all flex items-center justify-center space-x-2 font-medium">
+            <i class="fa-solid fa-image text-sky-400"></i>
+            <span>Select Image.jpg</span>
+            <input type="file" id="custPhotoFile" accept="image/*" class="hidden" />
+          </label>
+          <button type="button" id="resetPhotoBtn" class="px-3 py-2.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-300 text-xs font-mono">Reset</button>
+        </div>
+      </div>
+
+      <div>
+        <label class="block text-slate-400 font-mono uppercase mb-1">Your Full Name</label>
+        <input type="text" id="custName" value="Yadav S G" class="w-full px-3 py-2 rounded-lg bg-slate-900 border border-slate-700 text-slate-100" />
+      </div>
+
+      <div>
+        <label class="block text-slate-400 font-mono uppercase mb-1">Primary Role / Title</label>
+        <input type="text" id="custRole" value="Mac Support Analyst L3" class="w-full px-3 py-2 rounded-lg bg-slate-900 border border-slate-700 text-slate-100" />
+      </div>
+
+      <div>
+        <label class="block text-slate-400 font-mono uppercase mb-1">Email Address</label>
+        <input type="email" id="custEmail" value="yadavsgmca2023@gmail.com" class="w-full px-3 py-2 rounded-lg bg-slate-900 border border-slate-700 text-slate-100" />
+      </div>
+
+      <div>
+        <label class="block text-slate-400 font-mono uppercase mb-1">Accent Theme Color</label>
+        <div class="flex items-center space-x-3 mt-2">
+          <button data-color="#0284c7" class="color-picker-btn w-8 h-8 rounded-full bg-sky-500 border-2 border-white ring-2 ring-sky-500"></button>
+          <button data-color="#10b981" class="color-picker-btn w-8 h-8 rounded-full bg-emerald-500"></button>
+          <button data-color="#6366f1" class="color-picker-btn w-8 h-8 rounded-full bg-indigo-500"></button>
+          <button data-color="#a855f7" class="color-picker-btn w-8 h-8 rounded-full bg-purple-500"></button>
+          <button data-color="#f59e0b" class="color-picker-btn w-8 h-8 rounded-full bg-amber-500"></button>
+        </div>
+      </div>
+
+      <div class="pt-4 border-t border-slate-800">
+        <button id="applyCustomizerBtn" class="w-full py-3 rounded-xl bg-sky-600 text-white font-semibold text-sm hover:bg-sky-500 transition-all">
+          Apply & Save to Cloud
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div id="toastContainer" class="fixed bottom-6 right-6 z-50 space-y-2 pointer-events-none"></div>
+
+  <script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-app.js";
+    import { getAuth, signInAnonymously, signInWithCustomToken, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-auth.js";
+    import { getFirestore, doc, getDoc, setDoc, onSnapshot, collection, addDoc } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-firestore.js";
+
+    const appId = typeof __app_id !== 'undefined' ? __app_id : 'yadav-gowda-portfolio';
+    const firebaseConfig = typeof __firebase_config !== 'undefined' ? JSON.parse(__firebase_config) : {
+      apiKey: "demo-key",
+      authDomain: "demo.firebaseapp.com",
+      projectId: "demo-project"
+    };
+
+    let app, db, auth;
+    let currentUser = null;
+
+    try {
+      app = initializeApp(firebaseConfig);
+      db = getFirestore(app);
+      auth = getAuth(app);
+    } catch (e) {
+      console.warn("Cloud storage fallback mode active:", e);
+    }
+
+    async function initCloudAuth() {
+      if (!auth) return;
+      try {
+        if (typeof __initial_auth_token !== 'undefined' && __initial_auth_token) {
+          await signInWithCustomToken(auth, __initial_auth_token);
+        } else {
+          await signInAnonymously(auth);
+        }
+      } catch (err) {
+        console.error("Cloud Auth Error:", err);
+      }
+    }
+
+    onAuthStateChanged(auth, (user) => {
+      currentUser = user;
+      if (user && db) {
+        setupCloudSync();
+      }
+    });
+
+    initCloudAuth();
+
+    function setupCloudSync() {
+      if (!currentUser || !db) return;
+
+      const profileDocRef = doc(db, 'artifacts', appId, 'public', 'data', 'settings', 'userProfile');
+
+      onSnapshot(profileDocRef, (docSnap) => {
+        if (docSnap.exists()) {
+          const data = docSnap.data();
+          applyProfileData(data);
+          const statusText = document.getElementById('cloudStatusText');
+          if (statusText) statusText.textContent = "Synced";
+        }
+      }, (error) => {
+        console.error("Cloud listener error:", error);
+      });
+    }
+
+    window.savePortfolioToCloud = async function(profileData) {
+      if (!db || !currentUser) {
+        showToast('Profile updated locally!', 'info');
+        return;
+      }
+      try {
+        const profileDocRef = doc(db, 'artifacts', appId, 'public', 'data', 'settings', 'userProfile');
+        await setDoc(profileDocRef, {
+          ...profileData,
+          updatedAt: new Date().toISOString(),
+          updatedBy: currentUser.uid
+        }, { merge: true });
+        
+        const statusText = document.getElementById('cloudStatusText');
+        if (statusText) statusText.textContent = "Cloud Saved";
+        showToast('Portfolio configuration saved permanently to Cloud!', 'success');
+      } catch (error) {
+        console.error("Error saving to cloud:", error);
+        showToast('Configuration applied locally.', 'info');
+      }
+    };
+
+    window.saveContactMessageToCloud = async function(messageData) {
+      if (!db || !currentUser) return;
+      try {
+        const messagesCol = collection(db, 'artifacts', appId, 'public', 'data', 'contactMessages');
+        await addDoc(messagesCol, {
+          ...messageData,
+          createdAt: new Date().toISOString(),
+          senderUid: currentUser.uid
+        });
+      } catch (error) {
+        console.error("Error saving message:", error);
+      }
+    };
+
+    function applyProfileData(data) {
+      if (!data) return;
+      if (data.photoUrl) {
+        document.querySelectorAll('.profile-photo-img').forEach(img => {
+          img.src = data.photoUrl;
+        });
+      }
+      if (data.name) {
+        document.getElementById('navBrandName').textContent = data.name;
+        document.getElementById('heroName').textContent = data.name;
+        document.getElementById('footerName').textContent = data.name;
+        const custNameInput = document.getElementById('custName');
+        if (custNameInput) custNameInput.value = data.name;
+      }
+      if (data.role) {
+        const custRoleInput = document.getElementById('custRole');
+        if (custRoleInput) custRoleInput.value = data.role;
+      }
+      if (data.email) {
+        const custEmailInput = document.getElementById('custEmail');
+        if (custEmailInput) custEmailInput.value = data.email;
+        document.getElementById('contactEmail').textContent = data.email;
+      }
+      if (data.color) {
+        document.documentElement.style.setProperty('--color-brand-500', data.color);
+      }
+    }
+  </script>
+
+  <script>
+    const canvas = document.getElementById('particleCanvas');
+    const ctx = canvas.getContext('2d');
+
+    let particles = [];
+    let width = canvas.width = window.innerWidth;
+    let height = canvas.height = window.innerHeight;
+
+    window.addEventListener('resize', () => {
+      width = canvas.width = window.innerWidth;
+      height = canvas.height = window.innerHeight;
+      initParticles();
+    });
+
+    class Particle {
+      constructor() {
+        this.x = Math.random() * width;
+        this.y = Math.random() * height;
+        this.vx = (Math.random() - 0.5) * 0.5;
+        this.vy = (Math.random() - 0.5) * 0.5;
+        this.radius = Math.random() * 2 + 1;
+      }
+
+      update() {
+        this.x += this.vx;
+        this.y += this.vy;
+
+        if (this.x < 0 || this.x > width) this.vx *= -1;
+        if (this.y < 0 || this.y > height) this.vy *= -1;
+      }
+
+      draw() {
+        ctx.beginPath();
+        ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
+        ctx.fillStyle = 'rgba(20, 184, 166, 0.6)';
+        ctx.fill();
+      }
+    }
+
+    function initParticles() {
+      particles = [];
+      const count = Math.floor((width * height) / 18000);
+      for (let i = 0; i < count; i++) {
+        particles.push(new Particle());
+      }
+    }
+
+    function animateParticles() {
+      ctx.clearRect(0, 0, width, height);
+
+      for (let i = 0; i < particles.length; i++) {
+        particles[i].update();
+        particles[i].draw();
+
+        for (let j = i + 1; j < particles.length; j++) {
+          const dx = particles[i].x - particles[j].x;
+          const dy = particles[i].y - particles[j].y;
+          const dist = Math.sqrt(dx * dx + dy * dy);
+
+          if (dist < 100) {
+            ctx.beginPath();
+            ctx.moveTo(particles[i].x, particles[i].y);
+            ctx.lineTo(particles[j].x, particles[j].y);
+            ctx.strokeStyle = `rgba(20, 184, 166, ${0.25 * (1 - dist / 100)})`;
+            ctx.lineWidth = 0.5;
+            ctx.stroke();
+          }
+        }
+      }
+
+      requestAnimationFrame(animateParticles);
+    }
+
+    window.onload = function() {
+      initParticles();
+      animateParticles();
+    };
+
+    const typingElement = document.getElementById('typingText');
+    const roles = [
+      'Infrastructure Analyst', 
+      'L3 macOS Support Engineer', 
+      'Advanced Troubleshooting Lead',
+      'Jamf Pro & ABM Specialist', 
+      'Cloud Identity & Zero Trust Lead'
+    ];
+    let roleIndex = 0;
+    let charIndex = 0;
+    let isDeleting = false;
+
+    function typeLoop() {
+      const currentRole = roles[roleIndex];
+      
+      if (isDeleting) {
+        typingElement.textContent = currentRole.substring(0, charIndex - 1);
+        charIndex--;
+      } else {
+        typingElement.textContent = currentRole.substring(0, charIndex + 1);
+        charIndex++;
+      }
+
+      let speed = isDeleting ? 40 : 80;
+
+      if (!isDeleting && charIndex === currentRole.length) {
+        speed = 2200;
+        isDeleting = true;
+      } else if (isDeleting && charIndex === 0) {
+        isDeleting = false;
+        roleIndex = (roleIndex + 1) % roles.length;
+        speed = 400;
+      }
+
+      setTimeout(typeLoop, speed);
+    }
+    typeLoop();
+
+    function showToast(message, type = 'success') {
+      const toastContainer = document.getElementById('toastContainer');
+      const toast = document.createElement('div');
+      toast.className = `pointer-events-auto px-4 py-3 rounded-2xl glass-dark border border-slate-700 shadow-2xl flex items-center space-x-3 text-sm text-slate-100 transform translate-y-4 opacity-0 transition-all duration-300`;
+      
+      const icon = type === 'success' 
+        ? `<i class="fa-solid fa-circle-check text-emerald-400 text-base"></i>`
+        : `<i class="fa-solid fa-circle-info text-sky-400 text-base"></i>`;
+
+      toast.innerHTML = `${icon}<span>${message}</span>`;
+      toastContainer.appendChild(toast);
+
+      setTimeout(() => {
+        toast.classList.remove('translate-y-4', 'opacity-0');
+      }, 50);
+
+      setTimeout(() => {
+        toast.classList.add('opacity-0', 'translate-y-2');
+        setTimeout(() => toast.remove(), 300);
+      }, 3500);
+    }
+
+    // Custom Photo File Uploader
+    let uploadedPhotoDataUrl = null;
+    const custPhotoFile = document.getElementById('custPhotoFile');
+    const resetPhotoBtn = document.getElementById('resetPhotoBtn');
+
+    if (custPhotoFile) {
+      custPhotoFile.addEventListener('change', (e) => {
+        const file = e.target.files[0];
+        if (file) {
+          const reader = new FileReader();
+          reader.onload = (event) => {
+            uploadedPhotoDataUrl = event.target.result;
+            document.querySelectorAll('.profile-photo-img').forEach(img => {
+              img.src = uploadedPhotoDataUrl;
+            });
+            showToast('Profile photo updated!', 'success');
+          };
+          reader.readAsDataURL(file);
+        }
+      });
+    }
+
+    if (resetPhotoBtn) {
+      resetPhotoBtn.addEventListener('click', () => {
+        uploadedPhotoDataUrl = null;
+        document.querySelectorAll('.profile-photo-img').forEach(img => {
+          img.dataset.fallbackTried = "";
+          img.src = "Image.jpg";
+        });
+        showToast('Reset photo source', 'info');
+      });
+    }
+
+    // Filter Buttons Logic
+    const filterBtns = document.querySelectorAll('.project-filter-btn');
+    const projectCards = document.querySelectorAll('.project-card');
+
+    filterBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const filter = btn.getAttribute('data-filter');
+        
+        filterBtns.forEach(b => {
+          b.className = 'project-filter-btn px-5 py-2.5 rounded-xl font-medium text-xs transition-all glass hover:bg-slate-800 text-slate-300 flex items-center space-x-2';
+        });
+        btn.className = 'project-filter-btn px-5 py-2.5 rounded-xl font-medium text-xs transition-all bg-sky-600 text-white shadow-lg shadow-sky-600/30 flex items-center space-x-2';
+
+        projectCards.forEach(card => {
+          if (filter === 'all' || card.getAttribute('data-category') === filter) {
+            card.style.display = 'flex';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      });
+    });
+
+    // Resume Download Button
+<button id="downloadCvBtn" class="w-full sm:w-auto px-5 py-3.5 rounded-xl glass hover:bg-slate-800 text-slate-300 hover:text-white transition-all border border-slate-700/60 flex items-center justify-center space-x-2" title="Download Executive Profile PDF">
+  <i class="fa-solid fa-file-pdf text-red-400"></i>
+  <span class="text-xs font-semibold">Resume / Deck</span>
+</button>
+<a href="Yadav_SG_Resume.pdf" download="Yadav_SG_Resume.pdf" id="downloadCvBtn" class="w-full sm:w-auto px-5 py-3.5 rounded-xl glass hover:bg-slate-800 text-slate-300 hover:text-white transition-all border border-slate-700/60 flex items-center justify-center space-x-2" title="Download Executive Profile PDF">
+  <i class="fa-solid fa-file-pdf text-red-400"></i>
+  <span class="text-xs font-semibold">Resume / Deck</span>
+</a>
+    document.getElementById('downloadCvBtn').addEventListener('click', () => {
+      showToast('Downloading Portfolio Deck PDF...', 'info');
+    });
+
+    // Theme Toggle
+    const themeToggle = document.getElementById('themeToggle');
+    const themeIcon = document.getElementById('themeIcon');
+    let isDark = true;
+
+    themeToggle.addEventListener('click', () => {
+      isDark = !isDark;
+      if (isDark) {
+        document.documentElement.classList.add('dark');
+        document.documentElement.classList.remove('light');
+        themeIcon.className = 'fa-solid fa-moon text-sm';
+        showToast('Switched to Dark Mode', 'info');
+      } else {
+        document.documentElement.classList.remove('dark');
+        document.documentElement.classList.add('light');
+        themeIcon.className = 'fa-solid fa-sun text-sm text-amber-400';
+        showToast('Switched to Light Mode', 'info');
+      }
+    });
+
+    // Mobile Navigation Menu Toggle
+    const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    mobileMenuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    // Profile Customizer Drawer Logic
+    const customizerDrawer = document.getElementById('customizerDrawer');
+    const openCustomizerBtn = document.getElementById('openCustomizerBtn');
+    const closeCustomizerBtn = document.getElementById('closeCustomizerBtn');
+    const applyCustomizerBtn = document.getElementById('applyCustomizerBtn');
+
+    openCustomizerBtn.addEventListener('click', () => {
+      customizerDrawer.classList.remove('translate-x-full');
+    });
+
+    closeCustomizerBtn.addEventListener('click', () => {
+      customizerDrawer.classList.add('translate-x-full');
+    });
+
+    // Color Picker
+    const colorBtns = document.querySelectorAll('.color-picker-btn');
+    let selectedColor = '#0284c7';
+
+    colorBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        colorBtns.forEach(b => b.classList.remove('ring-2', 'ring-sky-500', 'border-2', 'border-white'));
+        btn.classList.add('ring-2', 'ring-sky-500', 'border-2', 'border-white');
+        selectedColor = btn.getAttribute('data-color');
+      });
+    });
+
+    applyCustomizerBtn.addEventListener('click', () => {
+      const name = document.getElementById('custName').value.trim() || 'Yadav S G';
+      const role = document.getElementById('custRole').value.trim() || 'Mac Support Analyst L3';
+      const email = document.getElementById('custEmail').value.trim() || 'yadavsgmca2023@gmail.com';
+
+      document.getElementById('navBrandName').textContent = name;
+      document.getElementById('heroName').textContent = name;
+      document.getElementById('footerName').textContent = name;
+      document.getElementById('contactEmail').textContent = email;
+
+      // Update Theme Color
+      document.documentElement.style.setProperty('--color-brand-500', selectedColor);
+
+      // Save to Cloud
+      if (window.savePortfolioToCloud) {
+        window.savePortfolioToCloud({
+          name,
+          role,
+          email,
+          color: selectedColor,
+          photoUrl: uploadedPhotoDataUrl
+        });
+      } else {
+        showToast('Live profile configuration updated!', 'success');
+      }
+
+      customizerDrawer.classList.add('translate-x-full');
+    });
+  </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

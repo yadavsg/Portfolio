@@ -1815,6 +1815,14 @@
     });
 
     // Resume Download Button
+<button id="downloadCvBtn" class="w-full sm:w-auto px-5 py-3.5 rounded-xl glass hover:bg-slate-800 text-slate-300 hover:text-white transition-all border border-slate-700/60 flex items-center justify-center space-x-2" title="Download Executive Profile PDF">
+  <i class="fa-solid fa-file-pdf text-red-400"></i>
+  <span class="text-xs font-semibold">Resume / Deck</span>
+</button>
+<a href="Yadav_SG_Resume.pdf" download="Yadav_SG_Resume.pdf" id="downloadCvBtn" class="w-full sm:w-auto px-5 py-3.5 rounded-xl glass hover:bg-slate-800 text-slate-300 hover:text-white transition-all border border-slate-700/60 flex items-center justify-center space-x-2" title="Download Executive Profile PDF">
+  <i class="fa-solid fa-file-pdf text-red-400"></i>
+  <span class="text-xs font-semibold">Resume / Deck</span>
+</a>
     document.getElementById('downloadCvBtn').addEventListener('click', () => {
       showToast('Downloading Portfolio Deck PDF...', 'info');
     });
